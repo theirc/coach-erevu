@@ -1,0 +1,50 @@
+{
+  "version": 0,
+  "weeks": [
+    {
+      "id": "0",
+      "title": "Week 1",
+      "topic": "Which fruits are best on a rainy day?",
+      "video": "videos/week1.mp4",
+      "questions": [
+        {
+          "question": "What fruit is best?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "apples",
+            "bananas",
+            "pears"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "How do you feel about the weather?",
+          "answer-type": "free-text"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "title": "Week 2",
+      "topic": "What is time?",
+      "video": "videos/week2.mp4",
+      "questions": [
+        {
+          "question": "What is time, really?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "a construct",
+            "how humans define their existence",
+            "meaningless",
+            "whatever is on the clock"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "How does time make your life better?",
+          "answer-type": "free-text"
+        }
+      ]
+    }
+  ]
+}
