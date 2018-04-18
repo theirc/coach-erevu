@@ -45,6 +45,50 @@
           "answer-type": "free-text"
         }
       ]
+    },
+    {
+      "id": "2",
+      "title": "Week 3",
+      "topic": "Which fruits are best on a rainy day?",
+      "video": "videos/week1.mp4",
+      "questions": [
+        {
+          "question": "What fruit is best?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "apples",
+            "bananas",
+            "pears"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "How do you feel about the weather?",
+          "answer-type": "free-text"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Week 4",
+      "topic": "Which fruits are best on a rainy day?",
+      "video": "videos/week1.mp4",
+      "questions": [
+        {
+          "question": "What fruit is best?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "apples",
+            "bananas",
+            "pears"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "How do you feel about the weather?",
+          "answer-type": "free-text"
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,7 @@
 package com.ryanwarsaw.hekima.model;
 
 import com.google.gson.annotations.SerializedName;
+import java.util.List;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.ToString;
@@ -13,5 +14,5 @@ public class Curriculum {
   public int version;
 
   @SerializedName("weeks")
-  public Week[] weeks;
+  public List<Week> weeks;
 }
