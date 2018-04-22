@@ -1,9 +1,10 @@
 package com.ryanwarsaw.hekima;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.hekima.adapter.MenuAdapter;
@@ -25,13 +26,27 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
+    // Manually update the orientation when initially starting the app.
+    onConfigurationChanged(getResources().getConfiguration());
+
     // Import the content.json file into memory, log the result.
     curriculum = parseContentFile(R.raw.content);
     Log.v("MainActivity", curriculum.toString());
 
     // Build the main menu options from the content.json file
     menuAdapter = new MenuAdapter(this, curriculum.weeks);
-    ((GridView) findViewById(R.id.menu_options)).setAdapter(menuAdapter);
+    ((ListView) findViewById(R.id.menu_options)).setAdapter(menuAdapter);
+  }
+
+  @Override
+  public void onConfigurationChanged(Configuration newConfig) {
+    super.onConfigurationChanged(newConfig);
+    LinearLayout layout = findViewById(R.id.main_menu);
+    if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+      layout.setOrientation(LinearLayout.HORIZONTAL);
+    } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+      layout.setOrientation(LinearLayout.VERTICAL);
+    }
   }
 
   private Curriculum parseContentFile(int resourceId) {

@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
+  android:id="@+id/main_menu"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   tools:context=".MainActivity">
 
-  <GridView
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:src="@drawable/logo"/>
+
+  <ListView
     android:id="@+id/menu_options"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:numColumns="auto_fit"
-    android:padding="50dp"
-    android:verticalSpacing="100dp"
-    android:horizontalSpacing="100dp"/>
-
-</RelativeLayout>
+    android:layout_weight="1"
+    android:divider="@null"
+    android:dividerHeight="15dp"
+    android:padding="25dp"/>
+</LinearLayout>
