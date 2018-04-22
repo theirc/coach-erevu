@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     Log.v("MainActivity", curriculum.toString());
 
     // Build the main menu options from the content.json file
-    menuAdapter = new MenuAdapter(this, curriculum.weeks);
+    menuAdapter = new MenuAdapter(this, curriculum);
     ((ListView) findViewById(R.id.menu_options)).setAdapter(menuAdapter);
   }
 

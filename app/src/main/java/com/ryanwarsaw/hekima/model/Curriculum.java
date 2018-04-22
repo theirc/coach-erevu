@@ -15,4 +15,11 @@ public class Curriculum {
 
   @SerializedName("weeks")
   public List<Week> weeks;
+
+  public Week findWeekByTitle(String title) {
+    for (Week week : weeks) {
+      if (week.title == title) return week;
+    }
+    return null;
+  }
 }

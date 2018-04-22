@@ -10,14 +10,14 @@
   <ImageView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1"
+    android:layout_weight="0.50"
     android:src="@drawable/logo"/>
 
   <ListView
     android:id="@+id/menu_options"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1"
+    android:layout_weight="0.50"
     android:divider="@null"
     android:dividerHeight="15dp"
     android:padding="25dp"/>
