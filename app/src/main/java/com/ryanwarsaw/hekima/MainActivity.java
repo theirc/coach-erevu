@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
   @Getter
   public Curriculum curriculum;
   private MenuAdapter menuAdapter;
-  private String[] permissions = {
+
+  private String CONTENT_FILENAME = "content.json";
+  private String[] PERMISSIONS = {
       permission.WRITE_EXTERNAL_STORAGE,
       permission.READ_EXTERNAL_STORAGE
   };
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     onConfigurationChanged(getResources().getConfiguration());
 
     // Import the content.json file into memory, log the result.
-    curriculum = parseContentFile("content.json");
+    curriculum = parseContentFile(CONTENT_FILENAME);
 
     // Check edge case of the app not having appropriate permissions.
     if (curriculum != null) {
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     if (requestCode == 1 && grantResults.length > 0
         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
       // Successfully received permission approval, finish inflating the main menu.
-      curriculum = parseContentFile("content.json");
+      curriculum = parseContentFile(CONTENT_FILENAME);
       menuAdapter = new MenuAdapter(this, curriculum);
       ((ListView) findViewById(R.id.menu_options)).setAdapter(menuAdapter);
     } else {
@@ -84,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
    * @return Curriculum object representation of the content file, or null if an error occurred.
    */
   private Curriculum parseContentFile(String fileName) {
-    if (hasPermissions(this, permissions)) {
+    if (hasPermissions(this, PERMISSIONS)) {
       File externalFile = new File(Environment.getExternalStoragePublicDirectory(
           Environment.DIRECTORY_DOWNLOADS).getPath() + "/" + fileName);
       try {
@@ -101,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         throw new RuntimeException("An error occurred while trying to parse file: " + fileName);
       }
     } else {
-      ActivityCompat.requestPermissions(this, permissions, 1);
+      ActivityCompat.requestPermissions(this, PERMISSIONS, 1);
     }
     return null;
   }
