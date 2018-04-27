@@ -3,7 +3,7 @@
   "weeks": [
     {
       "id": "0",
-      "title": "Week 1",
+      "title": "Introduction",
       "topic": "What is SEL?",
       "video": "week1.mp4",
       "questions": [
@@ -87,7 +87,7 @@
     },
     {
       "id": "1",
-      "title": "Week 2",
+      "title": "Activity 2",
       "topic": "What is time?",
       "video": "week2.mp4",
       "questions": [
@@ -110,7 +110,7 @@
     },
     {
       "id": "2",
-      "title": "Week 3",
+      "title": "Activity 3",
       "topic": "Which fruits are best on a rainy day?",
       "video": "week1.mp4",
       "questions": [
@@ -132,7 +132,7 @@
     },
     {
       "id": "3",
-      "title": "Week 4",
+      "title": "Activity 4",
       "topic": "Which fruits are best on a rainy day?",
       "video": "week1.mp4",
       "questions": [
