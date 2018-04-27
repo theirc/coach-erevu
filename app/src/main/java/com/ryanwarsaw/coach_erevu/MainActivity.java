@@ -1,4 +1,4 @@
-package com.ryanwarsaw.hekima;
+package com.ryanwarsaw.coach_erevu;
 
 import android.Manifest.permission;
 import android.content.Context;
@@ -13,8 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import com.google.gson.GsonBuilder;
-import com.ryanwarsaw.hekima.adapter.MenuAdapter;
-import com.ryanwarsaw.hekima.model.Curriculum;
+import com.ryanwarsaw.coach_erevu.adapter.MenuAdapter;
+import com.ryanwarsaw.coach_erevu.model.Curriculum;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;

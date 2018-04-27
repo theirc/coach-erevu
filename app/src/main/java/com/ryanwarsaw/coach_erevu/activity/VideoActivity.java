@@ -1,4 +1,4 @@
-package com.ryanwarsaw.hekima.activity;
+package com.ryanwarsaw.coach_erevu.activity;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -20,7 +20,7 @@ import com.google.android.exoplayer2.upstream.DataSource.Factory;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.FileDataSource;
 import com.google.android.exoplayer2.upstream.FileDataSource.FileDataSourceException;
-import com.ryanwarsaw.hekima.R;
+import com.ryanwarsaw.coach_erevu.R;
 import java.io.File;
 
 public class VideoActivity extends AppCompatActivity {

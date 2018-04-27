@@ -1,4 +1,4 @@
-package com.ryanwarsaw.hekima.activity;
+package com.ryanwarsaw.coach_erevu.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.google.gson.GsonBuilder;
-import com.ryanwarsaw.hekima.R;
-import com.ryanwarsaw.hekima.model.Week;
+import com.ryanwarsaw.coach_erevu.R;
+import com.ryanwarsaw.coach_erevu.model.Week;
 
 public class ActionActivity extends AppCompatActivity {
 

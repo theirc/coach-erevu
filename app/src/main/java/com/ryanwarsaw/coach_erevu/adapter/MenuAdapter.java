@@ -1,4 +1,4 @@
-package com.ryanwarsaw.hekima.adapter;
+package com.ryanwarsaw.coach_erevu.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import com.google.gson.GsonBuilder;
-import com.ryanwarsaw.hekima.R;
-import com.ryanwarsaw.hekima.activity.ActionActivity;
-import com.ryanwarsaw.hekima.model.Curriculum;
-import com.ryanwarsaw.hekima.model.Week;
+import com.ryanwarsaw.coach_erevu.R;
+import com.ryanwarsaw.coach_erevu.activity.ActionActivity;
+import com.ryanwarsaw.coach_erevu.model.Curriculum;
+import com.ryanwarsaw.coach_erevu.model.Week;
 
 public class MenuAdapter extends ArrayAdapter<Week> {
 

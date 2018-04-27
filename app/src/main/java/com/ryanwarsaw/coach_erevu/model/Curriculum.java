@@ -1,4 +1,4 @@
-package com.ryanwarsaw.hekima.model;
+package com.ryanwarsaw.coach_erevu.model;
 
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
