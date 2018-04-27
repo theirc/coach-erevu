@@ -9,7 +9,7 @@
 
   <Button
     android:id="@+id/watch_video_button"
-    android:background="@drawable/action_button"
+    android:background="@color/buttonLight"
     android:text="@string/watch_video_button"
     android:textSize="50dp"
     android:layout_width="match_parent"
@@ -21,7 +21,7 @@
 
   <Button
     android:id="@+id/take_quiz_button"
-    android:background="@drawable/action_button"
+    android:background="@color/buttonDark"
     android:text="@string/take_quiz_button"
     android:textSize="50dp"
     android:layout_width="match_parent"

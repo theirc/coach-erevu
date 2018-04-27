@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="colorPrimary">#3F51B5</color>
-  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorPrimary">#000</color>
+  <color name="colorPrimaryDark">#000</color>
   <color name="colorAccent">#FF4081</color>
-  <color name="actionButton">#D3D3D3</color>
-  <color name="videoBackground">#000000</color>
+  <color name="buttonLight">#5ACBF0</color>
+  <color name="buttonDark">#59A4CB</color>
+  <color name="videoBackground">#000</color>
 </resources>
