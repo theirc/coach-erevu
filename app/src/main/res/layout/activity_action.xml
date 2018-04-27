@@ -9,7 +9,8 @@
 
   <Button
     android:id="@+id/watch_video_button"
-    android:background="@color/buttonLight"
+    style="?android:attr/borderlessButtonStyle"
+    android:background="@drawable/button_light"
     android:text="@string/watch_video_button"
     android:textSize="50dp"
     android:layout_width="match_parent"
@@ -21,7 +22,8 @@
 
   <Button
     android:id="@+id/take_quiz_button"
-    android:background="@color/buttonDark"
+    style="?android:attr/borderlessButtonStyle"
+    android:background="@drawable/button_dark"
     android:text="@string/take_quiz_button"
     android:textSize="50dp"
     android:layout_width="match_parent"

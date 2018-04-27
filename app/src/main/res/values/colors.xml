@@ -5,5 +5,6 @@
   <color name="colorAccent">#FF4081</color>
   <color name="buttonLight">#5ACBF0</color>
   <color name="buttonDark">#59A4CB</color>
+  <color name="buttonBorder">#000</color>
   <color name="videoBackground">#000</color>
 </resources>
