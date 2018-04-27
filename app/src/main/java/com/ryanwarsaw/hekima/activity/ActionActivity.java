@@ -1,8 +1,11 @@
 package com.ryanwarsaw.hekima.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.hekima.R;
 import com.ryanwarsaw.hekima.model.Week;
@@ -21,5 +24,15 @@ public class ActionActivity extends AppCompatActivity {
     String payload = getIntent().getStringExtra("payload");
     week = new GsonBuilder().create().fromJson(payload, Week.class);
     Log.v("MainActivity", week.toString());
+
+    // Handle when a user interact's with the watch video button.
+    final Button videoButton = findViewById(R.id.watch_video_button);
+    videoButton.setOnClickListener(new View.OnClickListener() {
+      public void onClick(View view) {
+        final Intent intent = new Intent(ActionActivity.this, VideoActivity.class);
+        intent.putExtra("video_name", week.getVideoName());
+        ActionActivity.this.startActivity(intent);
+      }
+    });
   }
 }

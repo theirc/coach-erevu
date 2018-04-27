@@ -19,7 +19,7 @@ public class Week {
   public String topic;
 
   @SerializedName("video")
-  public String videoFileUrl;
+  public String videoName;
 
   @SerializedName("questions")
   public Question[] questions;

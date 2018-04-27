@@ -4,21 +4,83 @@
     {
       "id": "0",
       "title": "Week 1",
-      "topic": "Which fruits are best on a rainy day?",
-      "video": "videos/week1.mp4",
+      "topic": "What is SEL?",
+      "video": "week1.mp4",
       "questions": [
         {
-          "question": "What fruit is best?",
+          "question": "What was your overall impression of this video?",
           "answer-type": "multiple-choice",
           "answers": [
-            "apples",
-            "bananas",
-            "pears"
+            "I loved it and it was very useful.",
+            "I am neutral and I think it was neither useful nor useless.",
+            "I did not enjoy the video and I thought it was not useful."
+          ]
+        },
+        {
+          "question": "Who was talking to you on this video?",
+          "answer-type": "free-text"
+        },
+        {
+          "question": "What was your impression about this person?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "This person was very knowledgeable and inspiring.",
+            "I am not sure.",
+            "This person was unqualified to teach me something."
+          ]
+        },
+        {
+          "question": "Which one of these competencies was mentioned on the video?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Never give up",
+            "Always give up",
+            "Managing your time"
+          ],
+          "correct-answer": 0
+        },
+        {
+          "question": "Which one of these competencies was mentioned on the video?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Manage your creativity.",
+            "Manage your ambition",
+            "Manage your feelings"
           ],
           "correct-answer": 2
         },
         {
-          "question": "How do you feel about the weather?",
+          "question": "Which one of these competencies was mentioned on the video?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Build your house",
+            "Build your brain",
+            "Build your emotions"
+          ],
+          "correct-answer": 1
+        },
+        {
+          "question": "Which one of these competencies was mentioned on the video?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Increasing reading skills",
+            "Understanding instructions",
+            "Resolving arguments and fights"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Which one of these competencies was mentioned on the video?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Working well together",
+            "Increasing mathematical skills",
+            "Arriving on time at school"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Thank you so much for taking this quiz as a team. Is there anything else you would like to add as a comment?",
           "answer-type": "free-text"
         }
       ]
@@ -27,7 +89,7 @@
       "id": "1",
       "title": "Week 2",
       "topic": "What is time?",
-      "video": "videos/week2.mp4",
+      "video": "week2.mp4",
       "questions": [
         {
           "question": "What is time, really?",
@@ -50,7 +112,7 @@
       "id": "2",
       "title": "Week 3",
       "topic": "Which fruits are best on a rainy day?",
-      "video": "videos/week1.mp4",
+      "video": "week1.mp4",
       "questions": [
         {
           "question": "What fruit is best?",
@@ -72,7 +134,7 @@
       "id": "3",
       "title": "Week 4",
       "topic": "Which fruits are best on a rainy day?",
-      "video": "videos/week1.mp4",
+      "video": "week1.mp4",
       "questions": [
         {
           "question": "What fruit is best?",
