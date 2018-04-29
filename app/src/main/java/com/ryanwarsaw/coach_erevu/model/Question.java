@@ -1,6 +1,7 @@
 package com.ryanwarsaw.coach_erevu.model;
 
 import com.google.gson.annotations.SerializedName;
+import java.util.List;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.ToString;
@@ -16,7 +17,7 @@ public class Question {
   public String answerType;
 
   @SerializedName("answers")
-  public String[] answers;
+  public List<String> answers;
 
   @SerializedName("correct-answer")
   public int correctAnswerIndex;

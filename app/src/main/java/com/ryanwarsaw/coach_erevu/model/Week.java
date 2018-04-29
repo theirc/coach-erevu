@@ -1,6 +1,7 @@
 package com.ryanwarsaw.coach_erevu.model;
 
 import com.google.gson.annotations.SerializedName;
+import java.util.List;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.ToString;
@@ -22,5 +23,5 @@ public class Week {
   public String videoName;
 
   @SerializedName("questions")
-  public Question[] questions;
+  public List<Question> questions;
 }

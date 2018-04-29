@@ -24,6 +24,7 @@
     </activity>
     <activity android:name="com.ryanwarsaw.coach_erevu.activity.ActionActivity"/>
     <activity android:name="com.ryanwarsaw.coach_erevu.activity.VideoActivity"/>
+    <activity android:name="com.ryanwarsaw.coach_erevu.activity.QuizActivity"/>
   </application>
 
 </manifest>

@@ -21,12 +21,11 @@ public class MenuAdapter extends ArrayAdapter<Week> {
   private Curriculum curriculum;
 
   public MenuAdapter(@NonNull Context context, Curriculum curriculum) {
-    super(context, 0, curriculum.getWeeks());
+    super(context, R.layout.menu_item, curriculum.getWeeks());
     this.context = context;
     this.curriculum = curriculum;
   }
 
-  @NonNull
   @Override
   public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
     View menuItem = convertView != null ?

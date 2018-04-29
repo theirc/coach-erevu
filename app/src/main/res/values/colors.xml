@@ -7,4 +7,5 @@
   <color name="buttonDark">#59A4CB</color>
   <color name="buttonBorder">#000</color>
   <color name="videoBackground">#000</color>
+  <color name="questionText">#000</color>
 </resources>

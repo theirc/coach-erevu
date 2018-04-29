@@ -2,4 +2,6 @@
   <string name="app_name">Coach Erevu</string>
   <string name="watch_video_button">Watch the video</string>
   <string name="take_quiz_button">Take the quiz</string>
+  <string name="question">Question</string>
+  <string name="of">of</string>
 </resources>
