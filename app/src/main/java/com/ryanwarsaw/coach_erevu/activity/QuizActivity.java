@@ -1,15 +1,20 @@
 package com.ryanwarsaw.coach_erevu.activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.adapter.AnswerAdapter;
+import com.ryanwarsaw.coach_erevu.fragment.WrongAnswerFragment;
 import com.ryanwarsaw.coach_erevu.model.Question;
 import com.ryanwarsaw.coach_erevu.model.Week;
 
@@ -46,7 +51,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     // Load the appropriate components based on question type.
     if (question.getAnswerType().equals("multiple-choice")) {
-      ListView answerOptions = findViewById(R.id.answer_options);
+      final ListView answerOptions = findViewById(R.id.answer_options);
       answerOptions.setVisibility(View.VISIBLE);
       if (answerAdapter != null) {
         answerAdapter.clear();
@@ -57,8 +62,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         answerOptions.setAdapter(answerAdapter);
       }
     } else if (question.getAnswerType().equals("free-text")) {
-      EditText freeText = findViewById(R.id.answer_free_text);
-      freeText.setVisibility(View.VISIBLE);
+      // Remove any previously entered text from the text box if it exists.
+      final EditText freeText = findViewById(R.id.answer_free_text);
+      freeText.getText().clear();
+
+      final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
+      freeTextLayout.setVisibility(View.VISIBLE);
     }
   }
 
@@ -69,7 +78,11 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
       final int index = question.getAnswers().indexOf(button.getText());
       // Then the content file specified a correct index, trigger wrong prompt if necessary.
       if (question.getCorrectAnswerIndex() > 0 && index != question.getCorrectAnswerIndex() - 1) {
-        // TODO: Call the wrong answer prompt (Pop-up dialog fragment) here.
+        WrongAnswerFragment fragment = new WrongAnswerFragment();
+        Bundle args = new Bundle();
+        args.putString("correct_answer", question.getAnswers().get(question.getCorrectAnswerIndex() - 1));
+        fragment.setArguments(args);
+        fragment.show(getFragmentManager(), "wrong_answer_dialog");
       }
 
       final ListView listView = findViewById(R.id.answer_options);
@@ -77,7 +90,14 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     } else if (question.getAnswerType().equals("free-text")) {
       // TODO: Fetch the EditText field and write the response to analytics file.
       final EditText freeText = findViewById(R.id.answer_free_text);
-      freeText.setVisibility(View.GONE);
+      Log.v("QuizActivity", freeText.getText().toString());
+
+      InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+      inputManager.hideSoftInputFromWindow((getCurrentFocus() == null) ? null
+          : getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+
+      final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
+      freeTextLayout.setVisibility(View.GONE);
     }
 
     // Populate the next question if we have remaining questions, otherwise finish activity.
