@@ -1,6 +1,7 @@
 package com.ryanwarsaw.coach_erevu.activity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -71,6 +72,15 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     }
   }
 
+  public void advanceToNextQuestion() {
+    // Populate the next question if we have remaining questions, otherwise finish activity.
+    if (currentIndex + 1 < week.getQuestions().size()) {
+      populateQuestion(++currentIndex);
+    } else {
+      finish();
+    }
+  }
+
   @Override
   public void onClick(View v) {
     if (question.getAnswerType().equals("multiple-choice")) {
@@ -82,11 +92,21 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         Bundle args = new Bundle();
         args.putString("correct_answer", question.getAnswers().get(question.getCorrectAnswerIndex() - 1));
         fragment.setArguments(args);
+        fragment.setOnDismissListener(new WrongAnswerFragment.OnDismissListener() {
+          @Override
+          public void onDismiss() {
+            final ListView listView = findViewById(R.id.answer_options);
+            listView.setVisibility(View.GONE);
+            advanceToNextQuestion();
+          }
+        });
         fragment.show(getFragmentManager(), "wrong_answer_dialog");
       }
-
-      final ListView listView = findViewById(R.id.answer_options);
-      listView.setVisibility(View.GONE);
+      else {
+        final ListView listView = findViewById(R.id.answer_options);
+        listView.setVisibility(View.GONE);
+        advanceToNextQuestion();
+      }
     } else if (question.getAnswerType().equals("free-text")) {
       // TODO: Fetch the EditText field and write the response to analytics file.
       final EditText freeText = findViewById(R.id.answer_free_text);
@@ -98,13 +118,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
       final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
       freeTextLayout.setVisibility(View.GONE);
-    }
-
-    // Populate the next question if we have remaining questions, otherwise finish activity.
-    if (currentIndex + 1 < week.getQuestions().size()) {
-      populateQuestion(++currentIndex);
-    } else {
-      finish();
+      advanceToNextQuestion();
     }
   }
 }

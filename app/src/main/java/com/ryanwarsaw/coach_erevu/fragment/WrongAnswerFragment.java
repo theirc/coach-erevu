@@ -11,6 +11,8 @@ import com.ryanwarsaw.coach_erevu.R;
 
 public class WrongAnswerFragment extends DialogFragment {
 
+  private OnDismissListener onDismissListener;
+
   @Override
   public Dialog onCreateDialog(Bundle savedInstanceState) {
     AlertDialog.Builder builder = new Builder(getActivity());
@@ -26,8 +28,21 @@ public class WrongAnswerFragment extends DialogFragment {
   }
 
   @Override
+  public void onDismiss(DialogInterface dialog) {
+    this.onDismissListener.onDismiss();
+  }
+
+  @Override
   public void onStart() {
     super.onStart();
     ((AlertDialog) getDialog()).getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.buttonDark));
+  }
+
+  public interface OnDismissListener {
+    public void onDismiss();
+  }
+
+  public void setOnDismissListener(OnDismissListener onDismissListener) {
+    this.onDismissListener = onDismissListener;
   }
 }
