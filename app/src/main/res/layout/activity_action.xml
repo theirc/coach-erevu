@@ -5,31 +5,49 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   tools:context=".activity.ActionActivity"
-  android:layout_margin="20dp">
+  android:orientation="vertical">
 
-  <Button
-    android:id="@+id/watch_video_button"
-    style="?android:attr/borderlessButtonStyle"
+  <TextView
+    android:id="@+id/header_text"
     android:background="@drawable/button_light"
-    android:text="@string/watch_video_button"
-    android:textSize="50dp"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
-    android:layout_weight="0.50"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:layout_gravity="center"/>
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/questionText"
+    android:padding="20dp"/>
 
-  <Button
-    android:id="@+id/take_quiz_button"
-    style="?android:attr/borderlessButtonStyle"
-    android:background="@drawable/button_dark"
-    android:text="@string/take_quiz_button"
-    android:textSize="50dp"
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
-    android:layout_weight="0.50"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:layout_gravity="center"/>
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".activity.ActionActivity">
+
+    <Button
+      android:id="@+id/watch_video_button"
+      style="?android:attr/borderlessButtonStyle"
+      android:background="@drawable/button_light"
+      android:text="@string/watch_video_button"
+      android:textSize="50dp"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_weight="0.50"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_gravity="center"/>
+
+    <Button
+      android:id="@+id/take_quiz_button"
+      style="?android:attr/borderlessButtonStyle"
+      android:background="@drawable/button_dark"
+      android:text="@string/take_quiz_button"
+      android:textSize="50dp"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_weight="0.50"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_gravity="center"/>
+  </LinearLayout>
 </LinearLayout>

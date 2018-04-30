@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.model.Week;
@@ -22,6 +23,9 @@ public class ActionActivity extends AppCompatActivity {
     // can handily pass it around activities without problem.
     final String payload = getIntent().getStringExtra("payload");
     week = new GsonBuilder().create().fromJson(payload, Week.class);
+
+    // Update header text for the current week we're on.
+    ((TextView) findViewById(R.id.header_text)).setText(week.getTitle());
 
     // Handle when a user interact's with the watch video button.
     final Button videoButton = findViewById(R.id.watch_video_button);
