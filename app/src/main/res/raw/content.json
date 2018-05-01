@@ -100,7 +100,8 @@
             "meaningless",
             "whatever is on the clock"
           ],
-          "correct-answer": 2
+          "correct-answer": 2,
+          "answer-explanation": "If you are human, you must obey the arrow of time."
         },
         {
           "question": "How does time make your life better?",

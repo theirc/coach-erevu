@@ -81,6 +81,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         WrongAnswerFragment fragment = new WrongAnswerFragment();
         Bundle args = new Bundle();
         args.putString("correct_answer", question.getAnswers().get(question.getCorrectAnswerIndex() - 1));
+        args.putString("answer_explanation", question.getAnswerExplanation());
         fragment.setArguments(args);
         fragment.show(getFragmentManager(), "wrong_answer_dialog");
       }
