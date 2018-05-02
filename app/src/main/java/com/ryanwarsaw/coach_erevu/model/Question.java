@@ -21,4 +21,7 @@ public class Question {
 
   @SerializedName("correct-answer")
   public int correctAnswerIndex;
+
+  @SerializedName("answer-explanation")
+  public String answerExplanation;
 }

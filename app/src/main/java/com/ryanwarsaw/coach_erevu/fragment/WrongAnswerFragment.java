@@ -16,8 +16,16 @@ public class WrongAnswerFragment extends DialogFragment {
   @Override
   public Dialog onCreateDialog(Bundle savedInstanceState) {
     AlertDialog.Builder builder = new Builder(getActivity());
-    builder.setMessage(getResources().getString(R.string.wrong_answer_dialog) +
-      getArguments().getString("correct_answer") + "\"")
+    String dialogString = getResources().getString(R.string.wrong_answer_dialog) +
+                          getArguments().getString("correct_answer") + ".\"";
+
+    String answerExplanation = getArguments().getString("answer_explanation");
+
+    if (answerExplanation != null) {
+      dialogString = dialogString + " " + answerExplanation;
+    }
+
+    builder.setMessage(dialogString)
       .setPositiveButton(R.string.okay_button, new OnClickListener() {
         @Override
         public void onClick(DialogInterface dialog, int which) {
