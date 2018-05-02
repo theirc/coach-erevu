@@ -1,5 +1,6 @@
 package com.ryanwarsaw.coach_erevu.activity;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -25,6 +26,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
   private Question question;
   private AnswerAdapter answerAdapter;
   private int currentIndex = 0;
+  private int possibleScore = 0;
+  private int currentScore = 0;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -77,12 +80,30 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     if (currentIndex + 1 < week.getQuestions().size()) {
       populateQuestion(++currentIndex);
     } else {
-      finish();
+
+      AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+      alertDialog.setTitle(getResources().getString(R.string.quiz_end_title));
+      String scoreString = currentScore + "/" + possibleScore;
+      alertDialog.setMessage(getResources().getString(R.string.quiz_end) + " " + scoreString);
+      alertDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+        public void onDismiss(DialogInterface dialog) {
+          finish();
+        }
+      });
+      alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+        new DialogInterface.OnClickListener() {
+          public void onClick(DialogInterface dialog, int which) {
+            dialog.dismiss();
+          }
+        });
+      alertDialog.show();
     }
   }
 
   @Override
   public void onClick(View v) {
+    ++possibleScore;
+
     if (question.getAnswerType().equals("multiple-choice")) {
       final Button button = v.findViewById(R.id.menu_button);
       final int index = question.getAnswers().indexOf(button.getText());
@@ -106,6 +127,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
       else {
         final ListView listView = findViewById(R.id.answer_options);
         listView.setVisibility(View.GONE);
+
+        ++currentScore;
+
         advanceToNextQuestion();
       }
     } else if (question.getAnswerType().equals("free-text")) {
@@ -119,6 +143,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
       final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
       freeTextLayout.setVisibility(View.GONE);
+
+      ++currentScore;
+
       advanceToNextQuestion();
     }
   }
