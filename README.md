@@ -1,6 +1,6 @@
-<img align="center" src="https://github.com/ryanwarsaw/coach-erevu/blob/master/app/src/main/res/drawable/logo.png">
+<img align="center" width="450px" height="450px" src="https://github.com/ryanwarsaw/coach-erevu/blob/master/app/src/main/res/drawable/logo.png">
 
-### Installation
+## Installation
 
 **Prerequisites**
 
@@ -16,7 +16,7 @@ installation by double tapping the installed file. Please make sure you satisfie
 
 Visit [here](https://github.com/ryanwarsaw/coach-erevu/releases) to download the latest version of the APK file.
 
-### Content
+## Content
 
 By default Coach Erevu will use the content files provided to it when the app was originally compiled, these files are
 embedded within the app and can't be changed. To use a custom content file (including videos) you must place these files
