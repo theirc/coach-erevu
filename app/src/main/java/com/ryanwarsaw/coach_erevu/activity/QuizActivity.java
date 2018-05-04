@@ -1,5 +1,6 @@
 package com.ryanwarsaw.coach_erevu.activity;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -79,7 +80,22 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     if (currentIndex + 1 < week.getQuestions().size()) {
       populateQuestion(++currentIndex);
     } else {
-      finish();
+
+      AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+      alertDialog.setTitle(getResources().getString(R.string.quiz_end_title));
+      alertDialog.setMessage(getResources().getString(R.string.quiz_end));
+      alertDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+        public void onDismiss(DialogInterface dialog) {
+          finish();
+        }
+      });
+      alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+        new DialogInterface.OnClickListener() {
+          public void onClick(DialogInterface dialog, int which) {
+            dialog.dismiss();
+          }
+        });
+      alertDialog.show();
     }
   }
 
@@ -122,6 +138,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
       final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
       freeTextLayout.setVisibility(View.GONE);
+
       advanceToNextQuestion();
     }
   }
