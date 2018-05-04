@@ -4,83 +4,83 @@
     {
       "id": "0",
       "title": "Introduction",
-      "topic": "What is SEL?",
+      "topic": "Akabazo ka SEL ni iki",
       "video": "week1.mp4",
       "questions": [
         {
-          "question": "What was your overall impression of this video?",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "I loved it and it was very useful.",
-            "I am neutral and I think it was neither useful nor useless.",
-            "I did not enjoy the video and I thought it was not useful."
+            "Nayikunze kandi yari ngirakamaro cane",
+            "Ndi ntaho mpagaze kandi niyumvira ko itari ngirakamaro canke ataco imaze",
+            "Sinanezerejwe n’iyi reresi kandi niyumviriye ko itari ngirakamaro"
           ]
         },
         {
-          "question": "Who was talking to you on this video?",
+          "question": "Ni nde yariko avugana nawe muri iyi reresi?",
           "answer-type": "free-text"
         },
         {
-          "question": "What was your impression about this person?",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda uwo muntu?",
           "answer-type": "multiple-choice",
           "answers": [
-            "This person was very knowledgeable and inspiring.",
-            "I am not sure.",
-            "This person was unqualified to teach me something."
+            "Uyu muntu araciye ubwenge cane kandi yatumye ndabikunda",
+            "Sindabizi neza",
+            "Uyu muntu ntabushobozi afise bw’ukugira ico anyigishije"
           ]
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Never give up",
-            "Always give up",
-            "Managing your time"
+            "Ukutigera udohoka namba",
+            "Ama udohoka",
+            "Ugutunganya umwanya wawe"
           ],
           "correct-answer": 1
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Manage your creativity.",
-            "Manage your ambition",
-            "Manage your feelings"
+            "Tunganya ubushakashatsi bwawe",
+            "Ugutunganya intego yawe",
+            "Ukugenzura inyiyumvo zawe"
+          ],
+          "correct-answer": 3
+        },
+        {
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ubaka inzu yawe",
+            "Ukwubaka ubwonko bwawe",
+            "Ubaka ibishobisho vyawe"
           ],
           "correct-answer": 2
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Build your house",
-            "Build your brain",
-            "Build your emotions"
+            "Ukwongereza ubumenyi bw’ugusoma",
+            "Ugutahura ivyisungwa",
+            "Ugutatura impari hamwe n’indwano"
+          ],
+          "correct-answer": 3
+        },
+        {
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ugukorera mu runani rwiza",
+            "Ukwongereza ubumenyi mu biharuro",
+            "Ugushika kw’ishure ku gihe"
           ],
           "correct-answer": 1
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
-          "answer-type": "multiple-choice",
-          "answers": [
-            "Increasing reading skills",
-            "Understanding instructions",
-            "Resolving arguments and fights"
-          ],
-          "correct-answer": 2
-        },
-        {
-          "question": "Which one of these competencies was mentioned on the video?",
-          "answer-type": "multiple-choice",
-          "answers": [
-            "Working well together",
-            "Increasing mathematical skills",
-            "Arriving on time at school"
-          ],
-          "correct-answer": 2
-        },
-        {
-          "question": "Thank you so much for taking this quiz as a team. Is there anything else you would like to add as a comment?",
+          "question": "Mwakoze gukorera hamwe aka kabazo nk’umurwi. Hoba hari ikindi kintu mwipfuza kwongerako nk’ukugitra ico mu bivuzeko?",
           "answer-type": "free-text"
         }
       ]
@@ -88,23 +88,94 @@
     {
       "id": "1",
       "title": "Activity 2",
-      "topic": "What is time?",
+      "topic": "Samuel Avuze",
       "video": "week2.mp4",
       "questions": [
         {
-          "question": "What is time, really?",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "a construct",
-            "how humans define their existence",
-            "meaningless",
-            "whatever is on the clock"
-          ],
-          "correct-answer": 2,
-          "answer-explanation": "If you are human, you must obey the arrow of time."
+            "Nayikunze kandi yari ngirakamaro cane",
+            "Ndi ntaho mpagaze kandi niyumvira ko itari ngirakamaro canke ataco imaze",
+            "Sinanezerejwe n’iyi reresi kandi niyumviriye ko itari ngirakamaro"
+          ]
         },
         {
-          "question": "How does time make your life better?",
+          "question": "Ni ikihe gice c’ireresi cabaye ngirakamaro cane?",
+          "answer-type": "free-text"
+        },
+        {
+          "question": "Ni ubuhe bushobozi buri muri iyi reresi?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ukugenzura inyiyumvo zawe",
+            "Ukwubaka ubwonko bwawe",
+            "Ugutatura impari hamwe n’amatati"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Ni iyihe ntumbero y’aka gakino?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Gufasha abana kwumviriza hamwe n’ukugenzura ibikorwa vyabo",
+            "Gufasha abana kwiga ibintu bishasha",
+            "Gufasha abana gukorera mu runani"
+          ],
+          "correct-answer": 1
+        },
+        {
+          "question": "Ni ryari abana bategerezwa kwigana ibikorwa bikorwa n’umwigisha?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Mu gihe umwigisha avuze ngo \"nyiganga\"",
+            "Mu gihe umwigisha avuze ngo \"Samuel Avuze\"",
+            "Mu gihe umwigisha anumye"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Ni ibihe bintu utegerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ntegerezwa kubwira abanyeshure kwicara iyo bakoze ico mvuze ntatanguje \"Samuel Avuze\"",
+            "Ntegerezwa guhana abanyeshure bakora ukutariko",
+            "Ntegerezwa kunyarutsa cane umwanya wose"
+          ],
+          "correct-answer": 1
+        },
+        {
+          "question": "Ni ibihe bindi bintu udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Sintegerezwa kuvuga ngo \"Samuel Avuze\"",
+            "Sintegerezwa gutuma abana bimuka bava mu kibanza cabo",
+            "Sintegerezwa kuvuga ibijanye n’ivyo turiko turiga"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Ni ikihe kintu udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Sintegreza gutwenga",
+            "Sintegerezwa kuba mwiza",
+            "Sintegerezwa guhana abanyeshure bakoze amakosha"
+          ],
+          "correct-answer": 3
+        },
+        {
+          "question": "Ni ikhe kintu udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Sintegerezwa kwambara ishati isa n’ubururu",
+            "Sintegerezwa kuvuga ngo \"Samuel Avuze\" incuro nyinshi cane nikurikiranya",
+            "Sintegerezwa gusimba"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Fata umwanya mutoyi muganire n’abagenzi banyu hanyuma mushireho ihangiro ryo mu ndwi iza. Ni gute mushaka kwimenyereza SEL mu ndwi iza ? Fata urupapuro rwawe wuzuze aho hagaragara.",
           "answer-type": "free-text"
         }
       ]
@@ -112,21 +183,94 @@
     {
       "id": "2",
       "title": "Activity 3",
-      "topic": "Which fruits are best on a rainy day?",
+      "topic": "Nyigana",
       "video": "week1.mp4",
       "questions": [
         {
-          "question": "What fruit is best?",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi? (ubwinshi bwo guhitamwo – hitamwo kimwe_nta nyishu mbi ",
           "answer-type": "multiple-choice",
           "answers": [
-            "apples",
-            "bananas",
-            "pears"
+            "Nayikunze kandi yari ngirakamaro cane",
+            "Ndi ntaho mpagaze kandi niyumvira ko itari ngirakamaro canke ataco imaze",
+            "Sinanezerejwe n’iyi reresi kandi niyumviriye ko itari ngirakamaro"
+          ]
+        },
+        {
+          "question": "Ni ikihe gice c’ireresi cabaye ngirakamaro cane?",
+          "answer-type": "free-text"
+        },
+        {
+          "question": "Ni ubuhe bushobozi buri muri iyi reresi?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ukugenzura ibishobisho vyawe",
+            "Ukwubaka ubwonko bwawe",
+            "Ugutatura impari hamwe n’amatati"
+          ],
+          "correct-answer": 1
+        },
+        {
+          "question": "Abana bazokwiga iki mu gukora iki gikorwa? ",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Abana bazokwiga ibintu bishasha",
+            "Bazokwiga ukuntu ibishobisho bimeze kandi bavyiyumvemwo ubwabo hamwe n’abandi",
+            "Bazokwiga ukuntu bakorera mu runani"
           ],
           "correct-answer": 2
         },
         {
-          "question": "How do you feel about the weather?",
+          "question": "Ni ibiki umurongozi ategerezwa kwerekana?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ikintu coroshe gusubiramwo, nk’intambo",
+            "Ikintu kigoye gusubiramwo, nk’ururirimbo",
+            "Ibishobisho"
+          ],
+          "correct-answer": 3
+        },
+        {
+          "question": "Ni ikintu ikihe utegerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ntegerezwa gutanga uburorero bw’ibishobisho nyezina",
+            "Ntegerezwa guhana abanyeshure bakora ukutariko",
+            "Ntegerezwa kubwira abanyeshure kunyarutsa"
+          ],
+          "correct-answer": 1
+        },
+        {
+          "question": "Ni ikintu ikihe utegerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ntegerezwa kwirukanga mw’isomero",
+            "Ntegerezwa kwerekana ibishobisho kandi nkakosora abanyeshure mu bwitonzi",
+            "Ntegerezwa gusaba buri wese kwigirisha nk’uwushavuye"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Sintegerezwa gutwenga",
+            "Sintegerezwa kwerekana ibikorwa atari ibishobisho",
+            "Sintegerezwa kuba mwiza"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Sintegerezwa gusimba",
+            "Sintegerezwa kureka abanyeshure ngo bavuge ibishobisho vyabo, bategerezwa kuba bariko baravyerekana gusa",
+            "Sintegerezwa gutera intege abana"
+          ],
+          "correct-answer": 2
+        },
+        {
+          "question": "Fata umwanya mutoyi muganire na bagenzi banyu hanyuma mutunganye ihangiro ryo mu ndwi iza. Ni gute ushaka kuzogerageza SEL mu ndwi iza? Fata urupapuro rwawe, hanyuma wuzuze aho hagaragara.",
           "answer-type": "free-text"
         }
       ]
@@ -134,22 +278,87 @@
     {
       "id": "3",
       "title": "Activity 4",
-      "topic": "Which fruits are best on a rainy day?",
+      "topic": "Guma kw’ihangiro",
       "video": "week1.mp4",
       "questions": [
         {
-          "question": "What fruit is best?",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "apples",
-            "bananas",
-            "pears"
-          ],
-          "correct-answer": 2
+            "Nayikunze kandi yari ngirakamaro cane",
+            "Ndi ntaho mpagaze kandi niyumvira ko itari ngirakamaro canke ataco imaze",
+            "Sinanezerejwe n’iyi reresi kandi niyumviriye ko itari ngirakamaro"
+          ]
         },
         {
-          "question": "How do you feel about the weather?",
+          "question": "Ni ikihe gice c’ireresi cabaye ngirakamaro cane?",
           "answer-type": "free-text"
+        },
+        {
+          "question": "Ni ubuhe bushobozi buri muri iyi reresi?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ugukorera mu runani rwiza",
+            "Ukutigera udohoka namba",
+            "Ukwubaka ubwonko bwawe"
+          ]
+        },
+        {
+          "question": "Abana bazokwiga iki mu gukora iki gikorwa?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Bazokwiga gukorera mu runani rwiza",
+            "Bazokwiga gutunganya amahangiro ashoboka kandi batunganye integuro",
+            "Bazokwiga ukuntu bakurikirana"
+          ]
+        },
+        {
+          "question": "Mu gihe abanyeshure badashoboye gutanga ihangiro ni gute ushobora kubafasha?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Kubabwira mu gishingo cavyo bashushanye ishusho y’umuryango wabo",
+            "Gusabikanya uburorero bw’amahangiro yawe bwite mu kubikundisha abanyeshure",
+            "Kubwira abanyeshure ngo ntihagire ico baterera"
+          ]
+        },
+        {
+          "question": "Ni ikintu ikihe utegerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ntegerezwa gufasha abanyeshure kugira intambwe nyezina, zigezweko kandi zikorwa",
+            "Ntegerezwa kuvuga gusa ivyerekeye amahangiro yanje",
+            "Ntegerezwa kubwira abanyeshure ko amahangiro yabo atari yo."
+          ]
+        },
+        {
+          "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ntegerezwa gusaba abanyeshure kwerekana amahangiro yabo",
+            "Ntegerezwa gutanga uburorero bw’ibishobisho",
+            "Ntegerezwa kwumviriza neza abanyeshure hamwe n’ukubaha ivyiyumviro"
+          ]
+        },
+        {
+          "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Sintegerezwa gutera intege abanyeshure",
+            "Sintegerezwa kubwira abana igitegerezwa kuba amahangiro yabo",
+            "Sintegerezwa kuba mwiza"
+          ]
+        },
+        {
+          "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Sintegerezwa kwitwararika mu mwanya w’igikorwa",
+            "Sintegerezawa guhitamwo abana barenga 2 ngo basabikanye amahangiro hamwe  n’intambwe vyabo",
+            "Sintegerezwa gutera intege abana"
+          ]
+        },
+        {
+          "question": "Fata umwanya mutoyi muganire na bagenzi banyu hanyuma mutunganye ihangiro ryo mu ndwi iza. Ni gute mushaka kwimenyereza SEL mu ndwi iza? Fata urupapuro rwawe, hanyuma wuzuze aho hagaragara."
         }
       ]
     }
