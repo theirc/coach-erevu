@@ -1,4 +1,4 @@
-<img align="center" width="450px" height="450px" src="https://github.com/ryanwarsaw/coach-erevu/blob/master/app/src/main/res/drawable/logo.png">
+<img align="center" src="https://i.imgur.com/7K5cAzO.png">
 
 ## Installation
 
