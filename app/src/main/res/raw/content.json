@@ -4,83 +4,83 @@
     {
       "id": "0",
       "title": "Introduction",
-      "topic": "What is SEL?",
+      "topic": "Akabazo ka SEL ni iki",
       "video": "week1.mp4",
       "questions": [
         {
-          "question": "What was your overall impression of this video?",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "I loved it and it was very useful.",
-            "I am neutral and I think it was neither useful nor useless.",
-            "I did not enjoy the video and I thought it was not useful."
+            "Nayikunze kandi yari ngirakamaro cane",
+            "Ndi ntaho mpagaze kandi niyumvira ko itari ngirakamaro canke ataco imaze",
+            "Sinanezerejwe n’iyi reresi kandi niyumviriye ko itari ngirakamaro"
           ]
         },
         {
-          "question": "Who was talking to you on this video?",
+          "question": "Ni nde yariko avugana nawe muri iyi reresi?",
           "answer-type": "free-text"
         },
         {
-          "question": "What was your impression about this person?",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda uwo muntu?",
           "answer-type": "multiple-choice",
           "answers": [
-            "This person was very knowledgeable and inspiring.",
-            "I am not sure.",
-            "This person was unqualified to teach me something."
+            "Uyu muntu araciye ubwenge cane kandi yatumye ndabikunda",
+            "Sindabizi neza",
+            "Uyu muntu ntabushobozi afise bw’ukugira ico anyigishije"
           ]
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Never give up",
-            "Always give up",
-            "Managing your time"
+            "Ukutigera udohoka namba",
+            "Ama udohoka",
+            "Ugutunganya umwanya wawe"
           ],
           "correct-answer": 1
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Manage your creativity.",
-            "Manage your ambition",
-            "Manage your feelings"
+            "Tunganya ubushakashatsi bwawe",
+            "Ugutunganya intego yawe",
+            "Ukugenzura inyiyumvo zawe"
+          ],
+          "correct-answer": 3
+        },
+        {
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ubaka inzu yawe",
+            "Ukwubaka ubwonko bwawe",
+            "Ubaka ibishobisho vyawe"
           ],
           "correct-answer": 2
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Build your house",
-            "Build your brain",
-            "Build your emotions"
+            "Ukwongereza ubumenyi bw’ugusoma",
+            "Ugutahura ivyisungwa",
+            "Ugutatura impari hamwe n’indwano"
+          ],
+          "correct-answer": 3
+        },
+        {
+          "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
+          "answer-type": "multiple-choice",
+          "answers": [
+            "Ugukorera mu runani rwiza",
+            "Ukwongereza ubumenyi mu biharuro",
+            "Ugushika kw’ishure ku gihe"
           ],
           "correct-answer": 1
         },
         {
-          "question": "Which one of these competencies was mentioned on the video?",
-          "answer-type": "multiple-choice",
-          "answers": [
-            "Increasing reading skills",
-            "Understanding instructions",
-            "Resolving arguments and fights"
-          ],
-          "correct-answer": 2
-        },
-        {
-          "question": "Which one of these competencies was mentioned on the video?",
-          "answer-type": "multiple-choice",
-          "answers": [
-            "Working well together",
-            "Increasing mathematical skills",
-            "Arriving on time at school"
-          ],
-          "correct-answer": 2
-        },
-        {
-          "question": "Thank you so much for taking this quiz as a team. Is there anything else you would like to add as a comment?",
+          "question": "Mwakoze gukorera hamwe aka kabazo nk’umurwi. Hoba hari ikindi kintu mwipfuza kwongerako nk’ukugitra ico mu bivuzeko?",
           "answer-type": "free-text"
         }
       ]
