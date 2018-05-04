@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.coach_erevu.adapter.MenuAdapter;
+import com.ryanwarsaw.coach_erevu.logging.LoggingHandler;
 import com.ryanwarsaw.coach_erevu.model.Curriculum;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -28,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
   @Getter
   public Curriculum curriculum;
   private MenuAdapter menuAdapter;
+  private static LoggingHandler loggingHandler;
 
-  private String CONTENT_FILENAME = "content.json";
-  private String[] PERMISSIONS = {
+  private static String CONTENT_FILENAME = "content.json";
+  private static String LOG_FILENAME = "coach_erevu_log.csv";
+  private static String[] PERMISSIONS = {
       permission.WRITE_EXTERNAL_STORAGE,
       permission.READ_EXTERNAL_STORAGE
   };
@@ -45,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
     // Import the content.json file into memory, log the result.
     curriculum = parseContentFile(CONTENT_FILENAME);
+
+    // Create the log file if it doesn't exist, instantiate our logger.
+    loggingHandler = new LoggingHandler(LOG_FILENAME);
+
+    getLoggingHandler().write(getClass().getSimpleName(), "APP_STARTED", curriculum.getVersion());
 
     // Check edge case of the app not having appropriate permissions.
     if (curriculum != null) {
@@ -122,5 +130,16 @@ public class MainActivity extends AppCompatActivity {
       }
     }
     return true;
+  }
+
+  /**
+   * Manage our global instance of the logging handler, instantiate a new one if null.
+   * @return The app instance of the logging handler (for output).
+   */
+  public static LoggingHandler getLoggingHandler() {
+    if (loggingHandler == null) {
+      loggingHandler = new LoggingHandler(LOG_FILENAME);
+    }
+    return loggingHandler;
   }
 }

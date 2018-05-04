@@ -1,7 +1,6 @@
 package com.ryanwarsaw.coach_erevu.activity;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.google.gson.GsonBuilder;
+import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.adapter.AnswerAdapter;
 import com.ryanwarsaw.coach_erevu.fragment.WrongAnswerFragment;
@@ -70,6 +70,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
       final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
       freeTextLayout.setVisibility(View.VISIBLE);
     }
+
+    MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "QUIZ_QUESTION", question.getQuestion());
   }
 
   public void advanceToNextQuestion() {
@@ -88,6 +90,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
       final int index = question.getAnswers().indexOf(button.getText());
       // Then the content file specified a correct index, trigger wrong prompt if necessary.
       if (question.getCorrectAnswerIndex() > 0 && index != question.getCorrectAnswerIndex() - 1) {
+        MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "QUIZ_MULTI_CHOICE_WRONG", button.getText());
         WrongAnswerFragment fragment = new WrongAnswerFragment();
         Bundle args = new Bundle();
         args.putString("correct_answer", question.getAnswers().get(question.getCorrectAnswerIndex() - 1));
@@ -106,12 +109,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
       else {
         final ListView listView = findViewById(R.id.answer_options);
         listView.setVisibility(View.GONE);
+        MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "QUIZ_MULTI_CHOICE_CORRECT", button.getText());
         advanceToNextQuestion();
       }
     } else if (question.getAnswerType().equals("free-text")) {
-      // TODO: Fetch the EditText field and write the response to analytics file.
       final EditText freeText = findViewById(R.id.answer_free_text);
-      Log.v("QuizActivity", freeText.getText().toString());
+      MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "QUIZ_FREE_TEXT_RESPONSE", freeText.getText().toString());
 
       InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
       inputManager.hideSoftInputFromWindow((getCurrentFocus() == null) ? null

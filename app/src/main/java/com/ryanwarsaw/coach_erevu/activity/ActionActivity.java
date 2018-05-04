@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import com.google.gson.GsonBuilder;
+import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
+import com.ryanwarsaw.coach_erevu.adapter.MenuAdapter;
 import com.ryanwarsaw.coach_erevu.model.Week;
 
 public class ActionActivity extends AppCompatActivity {
@@ -33,6 +35,8 @@ public class ActionActivity extends AppCompatActivity {
       public void onClick(View view) {
         final Intent intent = new Intent(ActionActivity.this, VideoActivity.class);
         intent.putExtra("video_name", week.getVideoName());
+        MainActivity.getLoggingHandler().write(ActionActivity.this.getClass().getSimpleName(),
+            "BUTTON_VIDEO_PRESS", week.getVideoName());
         ActionActivity.this.startActivity(intent);
       }
     });
@@ -43,6 +47,8 @@ public class ActionActivity extends AppCompatActivity {
         if (week.getQuestions().size() > 0) {
           final Intent intent = new Intent(ActionActivity.this, QuizActivity.class);
           intent.putExtra("payload", payload);
+          MainActivity.getLoggingHandler().write(ActionActivity.this.getClass().getSimpleName(),
+              "BUTTON_QUIZ_PRESS", week.getTitle());
           ActionActivity.this.startActivity(intent);
         }
       }

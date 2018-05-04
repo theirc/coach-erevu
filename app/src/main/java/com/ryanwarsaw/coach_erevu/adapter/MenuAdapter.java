@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import com.google.gson.GsonBuilder;
+import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.activity.ActionActivity;
 import com.ryanwarsaw.coach_erevu.model.Curriculum;
@@ -36,6 +37,9 @@ public class MenuAdapter extends ArrayAdapter<Week> {
       public void onClick(View view) {
         final Button button = view.findViewById(R.id.menu_button);
         final Week week = curriculum.findWeekByTitle((String) button.getText());
+
+        MainActivity.getLoggingHandler().write(MenuAdapter.this.getClass().getSimpleName(), "MENU_SELECTED", week.getTitle());
+
         final Intent intent = new Intent(context, ActionActivity.class);
         intent.putExtra("payload", new GsonBuilder().create().toJson(week));
         context.startActivity(intent);

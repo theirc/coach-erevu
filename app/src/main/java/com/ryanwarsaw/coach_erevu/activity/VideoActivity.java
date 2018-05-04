@@ -20,6 +20,7 @@ import com.google.android.exoplayer2.upstream.DataSource.Factory;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.FileDataSource;
 import com.google.android.exoplayer2.upstream.FileDataSource.FileDataSourceException;
+import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import java.io.File;
 
@@ -43,6 +44,8 @@ public class VideoActivity extends AppCompatActivity {
       public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
         super.onPlayerStateChanged(playWhenReady, playbackState);
         if (playbackState == Player.STATE_ENDED) {
+          MainActivity.getLoggingHandler().write(VideoActivity.this.getClass().getSimpleName(),
+              "VIDEO_ENDED_WATCHED_FULL");
           finish();
         }
       }
@@ -66,12 +69,14 @@ public class VideoActivity extends AppCompatActivity {
   public void onPause() {
     super.onPause();
     exoPlayer.setPlayWhenReady(false);
+    MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "VIDEO_PAUSED");
   }
 
   @Override
   public void onResume() {
     super.onResume();
     exoPlayer.setPlayWhenReady(true);
+    MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "VIDEO_RESUMED");
   }
 
   @Override
