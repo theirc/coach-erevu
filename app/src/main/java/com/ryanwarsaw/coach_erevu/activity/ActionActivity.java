@@ -9,7 +9,6 @@ import android.widget.TextView;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
-import com.ryanwarsaw.coach_erevu.adapter.MenuAdapter;
 import com.ryanwarsaw.coach_erevu.model.Week;
 
 public class ActionActivity extends AppCompatActivity {
