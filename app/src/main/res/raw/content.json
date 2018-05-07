@@ -1,5 +1,5 @@
 {
-  "version": 0,
+  "version": 0.1,
   "weeks": [
     {
       "id": "0",
@@ -184,7 +184,7 @@
       "id": "2",
       "title": "Activity 3",
       "topic": "Nyigana",
-      "video": "week1.mp4",
+      "video": "week3.mp4",
       "questions": [
         {
           "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi? (ubwinshi bwo guhitamwo – hitamwo kimwe_nta nyishu mbi ",
@@ -279,7 +279,7 @@
       "id": "3",
       "title": "Activity 4",
       "topic": "Guma kw’ihangiro",
-      "video": "week1.mp4",
+      "video": "week4.mp4",
       "questions": [
         {
           "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi?",
