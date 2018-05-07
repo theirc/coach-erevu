@@ -1,14 +1,12 @@
 <img align="center" src="https://i.imgur.com/7K5cAzO.png">
 
+## Setup
+
+- [Make sure your device allows app installs from unknown sources.](https://www.applivery.com/docs/troubleshooting/android-unknown-sources) This will let you install this app without the Google Play Store.
+- [Install Android File Transfer on an easily accessible laptop/desktop.](https://www.android.com/filetransfer/) This will let you update content without rebuilding the app.
+- Optionally, [enable USB debugging via Developer Options on your device.](https://www.howtogeek.com/129728/how-to-access-the-developer-options-menu-and-enable-usb-debugging-on-android-4.2/)
+
 ## Installation
-
-**Prerequisites**
-
-- [Make sure your device allows app installs from unknown sources.](https://www.applivery.com/docs/troubleshooting/android-unknown-sources)
-- [Enable USB debugging via Developer Options on your device.](https://www.howtogeek.com/129728/how-to-access-the-developer-options-menu-and-enable-usb-debugging-on-android-4.2/)
-- [Install Android File Transfer on an easily accessible laptop/desktop](https://www.android.com/filetransfer/)
-
-**Install**
 
 Coach Erevu is distributed as an APK file (ending in `.apk`). To install the app you need to move this
 file to your Android device by downloading it from the internet. Once you have done so, you can start the
@@ -36,6 +34,29 @@ The content file should be named `content.json` and both the content and video f
      video3.mp4
      video4.mp4
 ```
+
+#### Changing content
+If you need to adjust the language in a certain question, add a question, change a title, etc., all of that can be done be editing `content.json`. If you don't yet have a copy of this file, go [here](https://github.com/ryanwarsaw/coach-erevu/blob/master/app/src/main/res/raw/content.json) and download it.
+
+##### To change `content.json`
+1. Open `content.json` in a text editor (Notepad, or TextEdit will work).
+2. Find the text you want to change, change it, and save the file. (See the **Formatting** section below for how to do so.)
+3. If you made any structural changes, you may want to paste the entirety of the file into https://jsonlint.com/ and click "Validate JSON". JSON is a way to format data so that a machine can read it, so it needs to be very specifically crafted. Validators like the one aforementioned help make sure.
+4. On your laptop, and open **Android File Transfer** (see above for download link).
+5. In Android File Transfer, find the `Download` folder.
+6. On your laptop, find the `content.json` file.
+7. Drag `content.json` from your laptop and into the `Download` folder **on Android File Transfer**.
+8. Restart the app on your Android device.
+
+##### To add or change a video
+The video for each week is referenced within `content.json`. And, by default, most weeks use `week1.mp4`. So, if you are adding or changing a video that is not `week1.mp4`, check `content.json` to make sure the app will know about your change. For instance, if you upload `week3.mp4`, make sure the `Activity 3` section of `content.json` refernces `week3.mp4` and not week1.mp4.
+
+1. On your laptop, and open **Android File Transfer** (see above for download link).
+3. In Android File Transfer, find the `Download` folder.
+4. On your laptop, find the video file you want to upload.
+5. Drag the video file from your laptop and into the `Download` folder **on Android File Transfer**.
+6. If you need to update `content.json` as a result of the change you made, see the above section.
+7. Restart the app on your Android device.
 
 ### Formatting
 All content quiz questions fall under two categories: `multiple-choice` and `free-text`. `multiple-choice` question
