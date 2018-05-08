@@ -3,7 +3,7 @@
   "weeks": [
     {
       "id": "0",
-      "title": "Introduction",
+      "title": "Intangamarara",
       "topic": "Akabazo ka SEL ni iki",
       "video": "week1.mp4",
       "questions": [
@@ -87,7 +87,7 @@
     },
     {
       "id": "1",
-      "title": "Activity 2",
+      "title": "Igikorwa ca 1",
       "topic": "Samuel Avuze",
       "video": "week2.mp4",
       "questions": [
@@ -182,7 +182,7 @@
     },
     {
       "id": "2",
-      "title": "Activity 3",
+      "title": "Igikorwa ca 2",
       "topic": "Nyigana",
       "video": "week3.mp4",
       "questions": [
@@ -277,7 +277,7 @@
     },
     {
       "id": "3",
-      "title": "Activity 4",
+      "title": "Igikorwa ca 3",
       "topic": "Guma kw’ihangiro",
       "video": "week4.mp4",
       "questions": [
