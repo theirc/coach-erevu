@@ -6,8 +6,9 @@
   <string name="okay_button">Okay</string>
   <string name="question">Question</string>
   <string name="of">of</string>
-  <string name="free_text_hint">Enter your response here...</string>
-  <string name="wrong_answer_dialog">That\'s wrong. The right answer is: \"</string>
+  <string name="free_text_hint">Injiza inyishu yawe ngaha...</string>
+  <string name="wrong_answer_dialog">Ivyo si vyo. Inyishu nziza ni:</string>
   <string name="quiz_end">Impera y\'akabazo! Ndagushimiye kubw\'ukwiga ibijanye na SEL hamwe no kubw\'ukwishura ibi bibazo vyose. Uri imboneza y\'abanyeshure.</string>
   <string name="quiz_end_title">Quiz Complete</string>
+  <string name="multiple_choice_hint">Hitamwo kimwe:</string>
 </resources>

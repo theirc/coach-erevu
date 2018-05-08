@@ -19,7 +19,7 @@ public class WrongAnswerFragment extends DialogFragment {
   public Dialog onCreateDialog(Bundle savedInstanceState) {
     super.onCreateDialog(savedInstanceState);
     AlertDialog.Builder builder = new Builder(getActivity());
-    String dialogString = getResources().getString(R.string.wrong_answer_dialog) +
+    String dialogString = getResources().getString(R.string.wrong_answer_dialog) + " \"" +
                           getArguments().getString("correct_answer") + ".\"";
 
     String answerExplanation = getArguments().getString("answer_explanation");

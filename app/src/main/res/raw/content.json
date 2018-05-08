@@ -43,7 +43,7 @@
           "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Tunganya ubushakashatsi bwawe",
+            "Ugutunganya ubushakashatsi bwawe",
             "Ugutunganya intego yawe",
             "Ukugenzura inyiyumvo zawe"
           ],
@@ -53,9 +53,9 @@
           "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Ubaka inzu yawe",
+            "Ukwubaka inzu yawe",
             "Ukwubaka ubwonko bwawe",
-            "Ubaka ibishobisho vyawe"
+            "Ukwubaka ibishobisho vyawe"
           ],
           "correct-answer": 2
         },
@@ -80,7 +80,7 @@
           "correct-answer": 1
         },
         {
-          "question": "Mwakoze gukorera hamwe aka kabazo nk’umurwi. Hoba hari ikindi kintu mwipfuza kwongerako nk’ukugitra ico mu bivuzeko?",
+          "question": "Mwakoze gukorera hamwe aka kabazo nk’umurwi. Hoba hari ikindi kintu mwipfuza kwongerako nk’ukugira ico mubivuzeko?",
           "answer-type": "free-text"
         }
       ]
@@ -175,7 +175,7 @@
           "correct-answer": 2
         },
         {
-          "question": "Fata umwanya mutoyi muganire n’abagenzi banyu hanyuma mushireho ihangiro ryo mu ndwi iza. Ni gute mushaka kwimenyereza SEL mu ndwi iza ? Fata urupapuro rwawe wuzuze aho hagaragara.",
+          "question": "Fata umwanya mutoyi muganire n’abagenzi banyu hanyuma mushireho ihangiro ryo mu ndwi iza. Ni gute mushaka kwimenyereza SEL mu ndwi iza? Fata urupapuro rwawe wuzuze aho hagaragara.",
           "answer-type": "free-text"
         }
       ]
@@ -187,7 +187,7 @@
       "video": "nyigana.mp4",
       "questions": [
         {
-          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi? (ubwinshi bwo guhitamwo – hitamwo kimwe_nta nyishu mbi ",
+          "question": "Ni ikihe ciyumviro rusangi cawe kijanye n’ugukunda iyi reresi?",
           "answer-type": "multiple-choice",
           "answers": [
             "Nayikunze kandi yari ngirakamaro cane",
