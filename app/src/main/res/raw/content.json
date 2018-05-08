@@ -301,7 +301,8 @@
             "Ugukorera mu runani rwiza",
             "Ukutigera udohoka namba",
             "Ukwubaka ubwonko bwawe"
-          ]
+          ],
+          "correct-answer": 1
         },
         {
           "question": "Abana bazokwiga iki mu gukora iki gikorwa?",
@@ -310,7 +311,8 @@
             "Bazokwiga gukorera mu runani rwiza",
             "Bazokwiga gutunganya amahangiro ashoboka kandi batunganye integuro",
             "Bazokwiga ukuntu bakurikirana"
-          ]
+          ],
+          "correct-answer": 3
         },
         {
           "question": "Mu gihe abanyeshure badashoboye gutanga ihangiro ni gute ushobora kubafasha?",
@@ -319,7 +321,8 @@
             "Kubabwira mu gishingo cavyo bashushanye ishusho y’umuryango wabo",
             "Gusabikanya uburorero bw’amahangiro yawe bwite mu kubikundisha abanyeshure",
             "Kubwira abanyeshure ngo ntihagire ico baterera"
-          ]
+          ],
+          "correct-answer": 2
         },
         {
           "question": "Ni ikintu ikihe utegerezwa kuba uriko urakora?",
@@ -328,7 +331,8 @@
             "Ntegerezwa gufasha abanyeshure kugira intambwe nyezina, zigezweko kandi zikorwa",
             "Ntegerezwa kuvuga gusa ivyerekeye amahangiro yanje",
             "Ntegerezwa kubwira abanyeshure ko amahangiro yabo atari yo."
-          ]
+          ],
+          "correct-answer": 3
         },
         {
           "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
@@ -337,7 +341,8 @@
             "Ntegerezwa gusaba abanyeshure kwerekana amahangiro yabo",
             "Ntegerezwa gutanga uburorero bw’ibishobisho",
             "Ntegerezwa kwumviriza neza abanyeshure hamwe n’ukubaha ivyiyumviro"
-          ]
+          ],
+          "correct-answer": 2
         },
         {
           "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
@@ -346,7 +351,8 @@
             "Sintegerezwa gutera intege abanyeshure",
             "Sintegerezwa kubwira abana igitegerezwa kuba amahangiro yabo",
             "Sintegerezwa kuba mwiza"
-          ]
+          ],
+          "correct-answer": 2
         },
         {
           "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
@@ -355,10 +361,12 @@
             "Sintegerezwa kwitwararika mu mwanya w’igikorwa",
             "Sintegerezawa guhitamwo abana barenga 2 ngo basabikanye amahangiro hamwe  n’intambwe vyabo",
             "Sintegerezwa gutera intege abana"
-          ]
+          ],
+          "correct-answer": 1
         },
         {
-          "question": "Fata umwanya mutoyi muganire na bagenzi banyu hanyuma mutunganye ihangiro ryo mu ndwi iza. Ni gute mushaka kwimenyereza SEL mu ndwi iza? Fata urupapuro rwawe, hanyuma wuzuze aho hagaragara."
+          "question": "Fata umwanya mutoyi muganire na bagenzi banyu hanyuma mutunganye ihangiro ryo mu ndwi iza. Ni gute mushaka kwimenyereza SEL mu ndwi iza? Fata urupapuro rwawe, hanyuma wuzuze aho hagaragara.",
+          "answer-type": "free-text"
         }
       ]
     }
