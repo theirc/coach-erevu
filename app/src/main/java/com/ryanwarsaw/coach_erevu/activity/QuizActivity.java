@@ -51,6 +51,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     final TextView questionText = findViewById(R.id.question_text);
     questionText.setText(question.getQuestion());
 
+    final TextView questionTooltip = findViewById(R.id.quiz_tooltip);
+
     // Load the appropriate components based on question type.
     if (question.getAnswerType().equals("multiple-choice")) {
       final ListView answerOptions = findViewById(R.id.answer_options);
@@ -63,6 +65,13 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         answerAdapter = new AnswerAdapter(this, question);
         answerOptions.setAdapter(answerAdapter);
       }
+
+      questionTooltip.setVisibility(TextView.VISIBLE);
+
+      // Hide the free text view, so it's not showing if the next question is of a different type.
+      final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
+      freeTextLayout.setVisibility(View.GONE);
+
     } else if (question.getAnswerType().equals("free-text")) {
       // Remove any previously entered text from the text box if it exists.
       final EditText freeText = findViewById(R.id.answer_free_text);
@@ -70,6 +79,11 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
       final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
       freeTextLayout.setVisibility(View.VISIBLE);
+      questionTooltip.setVisibility(TextView.GONE);
+
+      // Hide the multi-choice view, so it's not showing if the next question is of a different type.
+      final ListView listView = findViewById(R.id.answer_options);
+      listView.setVisibility(View.GONE);
     }
 
     MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "QUIZ_QUESTION", question.getQuestion());
@@ -122,10 +136,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         // Write a new entry to the analytics file, with the correct answer the user provided to the multi-choice question.
         MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "QUIZ_MULTI_CHOICE_CORRECT", button.getText());
 
-        // Hide the multi-choice view, so it's not showing if the next question is of a different type.
-        final ListView listView = findViewById(R.id.answer_options);
-        listView.setVisibility(View.GONE);
-
         // Advance to the next question programmatically, and update the view.
         advanceToNextQuestion();
       }
@@ -139,10 +149,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
       InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
       inputManager.hideSoftInputFromWindow((getCurrentFocus() == null) ? null
           : getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-
-      // Hide the free text view, so it's not showing if the next question is of a different type.
-      final LinearLayout freeTextLayout = findViewById(R.id.free_text_layout);
-      freeTextLayout.setVisibility(View.GONE);
 
       // Advance to the next question programmatically, and update the view.
       advanceToNextQuestion();

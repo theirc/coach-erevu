@@ -17,18 +17,31 @@
   <TextView
     android:id="@+id/question_text"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="0.6"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
     android:textAlignment="center"
-    android:textSize="55sp"
+    android:textSize="40sp"
     android:textColor="@color/questionText"
-    android:gravity="center"/>
+    android:gravity="center"
+    android:text="Test"/>
+
+  <TextView
+      android:id="@+id/quiz_tooltip"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.1"
+      android:textAlignment="center"
+      android:textSize="15sp"
+      android:textColor="@color/questionText"
+      android:gravity="center"
+      android:text="@string/multiple_choice_hint"
+      android:visibility="invisible"/>
 
   <ListView
     android:id="@+id/answer_options"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="0.4"
+    android:layout_height="0dp"
+    android:layout_weight="2"
     android:divider="@null"
     android:dividerHeight="20dp"
     android:padding="20dp"
@@ -37,8 +50,8 @@
   <LinearLayout
     android:id="@+id/free_text_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="0.4"
+    android:layout_height="0dp"
+    android:layout_weight="2"
     android:paddingLeft="50dp"
     android:paddingRight="50dp"
     android:visibility="gone"
