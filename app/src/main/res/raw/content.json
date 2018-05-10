@@ -302,7 +302,7 @@
             "Ukutigera udohoka namba",
             "Ukwubaka ubwonko bwawe"
           ],
-          "correct-answer": 1
+          "correct-answer": 2
         },
         {
           "question": "Abana bazokwiga iki mu gukora iki gikorwa?",
@@ -312,7 +312,7 @@
             "Bazokwiga gutunganya amahangiro ashoboka kandi batunganye integuro",
             "Bazokwiga ukuntu bakurikirana"
           ],
-          "correct-answer": 3
+          "correct-answer": 2
         },
         {
           "question": "Mu gihe abanyeshure badashoboye gutanga ihangiro ni gute ushobora kubafasha?",
@@ -332,7 +332,7 @@
             "Ntegerezwa kuvuga gusa ivyerekeye amahangiro yanje",
             "Ntegerezwa kubwira abanyeshure ko amahangiro yabo atari yo."
           ],
-          "correct-answer": 3
+          "correct-answer": 1
         },
         {
           "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
@@ -342,7 +342,7 @@
             "Ntegerezwa gutanga uburorero bw’ibishobisho",
             "Ntegerezwa kwumviriza neza abanyeshure hamwe n’ukubaha ivyiyumviro"
           ],
-          "correct-answer": 2
+          "correct-answer": 3
         },
         {
           "question": "Ni ikintu ikihe udategerezwa kuba uriko urakora?",
@@ -362,7 +362,7 @@
             "Sintegerezawa guhitamwo abana barenga 2 ngo basabikanye amahangiro hamwe  n’intambwe vyabo",
             "Sintegerezwa gutera intege abana"
           ],
-          "correct-answer": 1
+          "correct-answer": 2
         },
         {
           "question": "Fata umwanya mutoyi muganire na bagenzi banyu hanyuma mutunganye ihangiro ryo mu ndwi iza. Ni gute mushaka kwimenyereza SEL mu ndwi iza? Fata urupapuro rwawe, hanyuma wuzuze aho hagaragara.",
