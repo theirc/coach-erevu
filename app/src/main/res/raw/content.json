@@ -158,14 +158,14 @@
           "question": "Ni ikihe kintu udategerezwa kuba uriko urakora?",
           "answer-type": "multiple-choice",
           "answers": [
-            "Sintegreza gutwenga",
+            "Sintegerezwa gutwenga",
             "Sintegerezwa kuba mwiza",
             "Sintegerezwa guhana abanyeshure bakoze amakosha"
           ],
           "correct-answer": 3
         },
         {
-          "question": "Ni ikhe kintu udategerezwa kuba uriko urakora?",
+          "question": "Ni ikihe kintu udategerezwa kuba uriko urakora?",
           "answer-type": "multiple-choice",
           "answers": [
             "Sintegerezwa kwambara ishati isa n’ubururu",
