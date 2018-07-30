@@ -1,27 +1,29 @@
 package com.ryanwarsaw.coach_erevu.model;
 
 import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
+
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.ToString;
 
 @ToString
 @Getter(AccessLevel.PUBLIC)
-public class Week {
+public class Topic {
 
   @SerializedName("id")
-  public int id;
+  private int id;
 
   @SerializedName("title")
-  public String title;
+  private String title;
 
-  @SerializedName("topic")
-  public String topic;
+  @SerializedName("color")
+  private String color;
 
   @SerializedName("video")
-  public String videoName;
+  private String videoName;
 
   @SerializedName("questions")
-  public List<Question> questions;
+  private List<Question> questions;
 }

@@ -15,16 +15,17 @@
     android:theme="@style/AppTheme">
     <!-- Need to listen to screenSize when targeting Android API 13+ -->
     <activity
-      android:name="com.ryanwarsaw.coach_erevu.MainActivity"
+      android:name=".MainActivity"
       android:configChanges="orientation|screenSize">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-    <activity android:name="com.ryanwarsaw.coach_erevu.activity.ActionActivity"/>
-    <activity android:name="com.ryanwarsaw.coach_erevu.activity.VideoActivity"/>
-    <activity android:name="com.ryanwarsaw.coach_erevu.activity.QuizActivity"/>
+    <activity android:name=".activity.ActionActivity"/>
+    <activity android:name=".activity.VideoActivity"/>
+    <activity android:name=".activity.QuizActivity"/>
+    <activity android:name=".activity.TopicActivity"/>
   </application>
 
 </manifest>

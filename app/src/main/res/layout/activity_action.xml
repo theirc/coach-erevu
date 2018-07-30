@@ -9,7 +9,7 @@
 
   <TextView
     android:id="@+id/header_text"
-    android:background="@drawable/button_light"
+    android:background="@drawable/button"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textSize="20sp"
@@ -27,9 +27,9 @@
     <Button
       android:id="@+id/watch_video_button"
       style="?android:attr/borderlessButtonStyle"
-      android:background="@drawable/button_light"
+      android:background="@drawable/button"
       android:text="@string/watch_video_button"
-      android:textSize="50dp"
+      android:textSize="50sp"
       android:layout_width="match_parent"
       android:layout_height="300dp"
       android:layout_weight="0.50"
@@ -40,9 +40,9 @@
     <Button
       android:id="@+id/take_quiz_button"
       style="?android:attr/borderlessButtonStyle"
-      android:background="@drawable/button_dark"
+      android:background="@drawable/button"
       android:text="@string/take_quiz_button"
-      android:textSize="50dp"
+      android:textSize="50sp"
       android:layout_width="match_parent"
       android:layout_height="300dp"
       android:layout_weight="0.50"
