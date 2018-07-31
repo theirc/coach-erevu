@@ -8,19 +8,23 @@ import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+
 import com.google.gson.GsonBuilder;
-import com.ryanwarsaw.coach_erevu.adapter.MenuAdapter;
+import com.ryanwarsaw.coach_erevu.adapter.CategoryAdapter;
 import com.ryanwarsaw.coach_erevu.logging.LoggingHandler;
 import com.ryanwarsaw.coach_erevu.model.Curriculum;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
 import lombok.Cleanup;
 import lombok.Getter;
 
@@ -28,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
   @Getter
   public Curriculum curriculum;
-  private MenuAdapter menuAdapter;
   private static LoggingHandler loggingHandler;
 
   private static String CONTENT_FILENAME = "content.json";
@@ -46,19 +49,11 @@ public class MainActivity extends AppCompatActivity {
     // Manually update the orientation when initially starting the app.
     onConfigurationChanged(getResources().getConfiguration());
 
-    // Import the content.json file into memory, log the result.
-    curriculum = parseContentFile(CONTENT_FILENAME);
-
-    // Create the log file if it doesn't exist, instantiate our logger.
-    loggingHandler = new LoggingHandler(LOG_FILENAME);
-
-    getLoggingHandler().write(getClass().getSimpleName(), "APP_STARTED", curriculum.getVersion());
-
-    // Check edge case of the app not having appropriate permissions.
-    if (curriculum != null) {
-      // Build the main menu options from the content.json file
-      menuAdapter = new MenuAdapter(this, curriculum);
-      ((ListView) findViewById(R.id.menu_options)).setAdapter(menuAdapter);
+    // Mostly for first-time users, makes sure we have proper permissions before inflating content.
+    if (!hasPermissions(this, PERMISSIONS)) {
+      ActivityCompat.requestPermissions(this, PERMISSIONS, 1);
+    } else {
+      inflateContentFile(CONTENT_FILENAME);
     }
   }
 
@@ -74,13 +69,11 @@ public class MainActivity extends AppCompatActivity {
   }
 
   @Override
-  public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+  public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
     if (requestCode == 1 && grantResults.length > 0
-        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
       // Successfully received permission approval, finish inflating the main menu.
-      curriculum = parseContentFile(CONTENT_FILENAME);
-      menuAdapter = new MenuAdapter(this, curriculum);
-      ((ListView) findViewById(R.id.menu_options)).setAdapter(menuAdapter);
+      inflateContentFile(CONTENT_FILENAME);
     } else {
       finishAffinity(); // Failed to receive permission approval, kill the application.
     }
@@ -91,29 +84,28 @@ public class MainActivity extends AppCompatActivity {
    * check the Download/ folder on your Android device for a file with the name provided. If
    * it is unable to find that file, it will default to the app packaged version.
    * @param fileName The fully qualified name of the file (including extension).
-   * @return Curriculum object representation of the content file, or null if an error occurred.
    */
-  private Curriculum parseContentFile(String fileName) {
-    if (hasPermissions(this, PERMISSIONS)) {
-      File externalFile = new File(Environment.getExternalStoragePublicDirectory(
-          Environment.DIRECTORY_DOWNLOADS).getPath() + "/" + fileName);
-      try {
-        @Cleanup InputStream inputStream = externalFile.exists() ?
-            new FileInputStream(externalFile) : getResources().openRawResource(R.raw.content);
-        @Cleanup ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+  private void inflateContentFile(String fileName) {
+    File externalFile = new File(Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_DOWNLOADS).getPath() + "/" + fileName);
+    loggingHandler = new LoggingHandler(LOG_FILENAME);
 
-        byte[] buffer = new byte[inputStream.available()];
-        inputStream.read(buffer);
-        outputStream.write(buffer);
+    try {
+      @Cleanup InputStream inputStream = externalFile.exists() ?
+              new FileInputStream(externalFile) : getResources().openRawResource(R.raw.content);
+      @Cleanup ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
-        return new GsonBuilder().create().fromJson(outputStream.toString(), Curriculum.class);
-      } catch (IOException e) {
-        throw new RuntimeException("An error occurred while trying to parse file: " + fileName);
-      }
-    } else {
-      ActivityCompat.requestPermissions(this, PERMISSIONS, 1);
+      byte[] buffer = new byte[inputStream.available()];
+      inputStream.read(buffer);
+      outputStream.write(buffer);
+
+      curriculum = new GsonBuilder().create().fromJson(outputStream.toString(), Curriculum.class);
+    } catch (IOException e) {
+      throw new RuntimeException("An error occurred while trying to parse file: " + fileName);
     }
-    return null;
+
+    ((ListView) findViewById(R.id.menu_options)).setAdapter(new CategoryAdapter(this, getCurriculum()));
+    getLoggingHandler().write(getClass().getSimpleName(), "APP_STARTED", getCurriculum().getVersion());
   }
 
   /**

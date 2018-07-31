@@ -12,40 +12,45 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.adapter.AnswerAdapter;
 import com.ryanwarsaw.coach_erevu.fragment.WrongAnswerFragment;
+import com.ryanwarsaw.coach_erevu.model.Preferences;
 import com.ryanwarsaw.coach_erevu.model.Question;
-import com.ryanwarsaw.coach_erevu.model.Week;
+import com.ryanwarsaw.coach_erevu.model.Topic;
 
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener {
 
-  private Week week;
+  private Topic topic;
   private Question question;
   private AnswerAdapter answerAdapter;
   private int currentIndex = 0;
+  private Preferences preferences;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_quiz);
 
-    final String payload = getIntent().getStringExtra("payload");
-    week = new GsonBuilder().create().fromJson(payload, Week.class);
+    final Gson gson = new GsonBuilder().create();
+    topic = gson.fromJson(getIntent().getStringExtra("topic"), Topic.class);
+    preferences = gson.fromJson(getIntent().getStringExtra("preferences"), Preferences.class);
 
-    populateQuestion(currentIndex);
+    inflateQuestion(currentIndex);
   }
 
-  private void populateQuestion(int index) {
-    question = week.getQuestions().get(index);
+  private void inflateQuestion(int index) {
+    question = topic.getQuestions().get(index);
     currentIndex = index;
 
     // Update the header text with current question index.
     final TextView headerText = findViewById(R.id.header_text);
-    headerText.setText(week.getTitle() + " : " + getResources().getString(R.string.question) + " (" +
-        (currentIndex + 1) + " " + getResources().getString(R.string.of) + " " + week.getQuestions().size() + ")");
+    headerText.setText(getString(R.string.question_header, topic.getTitle(),
+            currentIndex + 1, topic.getQuestions().size()));
 
     // Update the question text with the current question.
     final TextView questionText = findViewById(R.id.question_text);
@@ -91,9 +96,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
   public void advanceToNextQuestion() {
     // Populate the next question if we have remaining questions, otherwise finish activity.
-    if (currentIndex + 1 < week.getQuestions().size()) {
+    if (currentIndex + 1 < topic.getQuestions().size()) {
       // We have not completed the quiz yet, so let's move onto the next question.
-      populateQuestion(++currentIndex);
+      inflateQuestion(++currentIndex);
     } else {
       // Build the dialog to inform the user they've finished the quiz, and present it to them.
       AlertDialog alertDialog = new AlertDialog.Builder(this).create();
@@ -129,6 +134,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         Bundle args = new Bundle();
         args.putString("correct_answer", question.getAnswers().get(question.getCorrectAnswerIndex() - 1));
         args.putString("answer_explanation", question.getAnswerExplanation());
+        args.putString("preferences", new GsonBuilder().create().toJson(preferences));
         fragment.setArguments(args);
         fragment.show(getFragmentManager(), "wrong_answer_dialog");
       }
@@ -147,8 +153,10 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
       // Close the keyboard if it's still open and accessible to the user.
       InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-      inputManager.hideSoftInputFromWindow((getCurrentFocus() == null) ? null
-          : getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+      if (inputManager != null) {
+        inputManager.hideSoftInputFromWindow((getCurrentFocus() == null) ? null
+            : getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+      }
 
       // Advance to the next question programmatically, and update the view.
       advanceToNextQuestion();

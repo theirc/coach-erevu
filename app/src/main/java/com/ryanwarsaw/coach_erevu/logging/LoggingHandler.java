@@ -2,6 +2,7 @@ package com.ryanwarsaw.coach_erevu.logging;
 
 import android.os.Environment;
 import android.text.TextUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -11,15 +12,14 @@ import java.util.Date;
 
 public class LoggingHandler {
 
-  private File externalFile;
   private PrintWriter printWriter;
   private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd 'at' HH:mm:ss z");
 
   public LoggingHandler(String fileName) {
     try {
-      this.externalFile = new File(Environment.getExternalStoragePublicDirectory(
-          Environment.DIRECTORY_DOWNLOADS), fileName);
-      this.externalFile.createNewFile();
+      File externalFile = new File(Environment.getExternalStoragePublicDirectory(
+              Environment.DIRECTORY_DOWNLOADS), fileName);
+      externalFile.createNewFile();
       this.printWriter = new PrintWriter(new FileOutputStream(externalFile, true), false);
     } catch (IOException e) {
       e.printStackTrace();

@@ -1,7 +1,9 @@
 package com.ryanwarsaw.coach_erevu.model;
 
 import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
+
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.ToString;
@@ -11,14 +13,19 @@ import lombok.ToString;
 public class Curriculum {
 
   @SerializedName("version")
-  public int version;
+  private int version;
 
-  @SerializedName("weeks")
-  public List<Week> weeks;
+  @SerializedName("preferences")
+  private Preferences preferences;
 
-  public Week findWeekByTitle(String title) {
-    for (Week week : weeks) {
-      if (week.title == title) return week;
+  @SerializedName("categories")
+  private List<Category> categories;
+
+  public Category findCategoryByTitle(String title) {
+    for (Category category : getCategories()) {
+      if (category.getTitle().equalsIgnoreCase(title)) {
+        return category;
+      }
     }
     return null;
   }
