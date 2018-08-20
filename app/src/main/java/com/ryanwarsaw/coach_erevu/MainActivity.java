@@ -3,7 +3,6 @@ package com.ryanwarsaw.coach_erevu;
 import android.Manifest.permission;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.content.res.Configuration;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.google.gson.GsonBuilder;
@@ -98,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   /**
-   * Utility method for checking multiple permissions at once for a required operation.
+   * CommonUtilities method for checking multiple permissions at once for a required operation.
    * @param context The relevant context object currently being used.
    * @param permissions String array of all permissions to check for approval.
    * @return bool Depending on whether all appropriate permissions are present or not.

@@ -31,14 +31,13 @@ import java.io.File;
 public class VideoActivity extends AppCompatActivity {
 
   private SimpleExoPlayer exoPlayer;
-  private Preferences preferences;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_video);
 
-    preferences = new GsonBuilder().create()
+    final Preferences preferences = new GsonBuilder().create()
             .fromJson(getIntent().getStringExtra("preferences"), Preferences.class);
 
     exoPlayer = ExoPlayerFactory.newSimpleInstance(this, new DefaultTrackSelector());
