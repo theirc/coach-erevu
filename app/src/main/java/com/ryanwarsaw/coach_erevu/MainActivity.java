@@ -58,17 +58,6 @@ public class MainActivity extends AppCompatActivity {
   }
 
   @Override
-  public void onConfigurationChanged(Configuration newConfig) {
-    super.onConfigurationChanged(newConfig);
-    LinearLayout layout = findViewById(R.id.main_menu);
-    if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-      layout.setOrientation(LinearLayout.HORIZONTAL);
-    } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
-      layout.setOrientation(LinearLayout.VERTICAL);
-    }
-  }
-
-  @Override
   public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
     if (requestCode == 1 && grantResults.length > 0
             && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
