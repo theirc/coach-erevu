@@ -4,7 +4,10 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -15,6 +18,7 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.ryanwarsaw.coach_erevu.CommonUtilities;
 import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.adapter.AnswerAdapter;
@@ -22,6 +26,8 @@ import com.ryanwarsaw.coach_erevu.fragment.WrongAnswerFragment;
 import com.ryanwarsaw.coach_erevu.model.Preferences;
 import com.ryanwarsaw.coach_erevu.model.Question;
 import com.ryanwarsaw.coach_erevu.model.Topic;
+
+import java.util.Objects;
 
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,10 +41,21 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_quiz);
+    setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
     final Gson gson = new GsonBuilder().create();
     topic = gson.fromJson(getIntent().getStringExtra("topic"), Topic.class);
     preferences = gson.fromJson(getIntent().getStringExtra("preferences"), Preferences.class);
+
+    final ActionBar actionBar = getSupportActionBar();
+    if (actionBar != null) {
+      actionBar.setTitle(topic.getTitle());
+
+      // Set the background of the ActionBar to the color of the category it represents.
+      actionBar.setBackgroundDrawable(CommonUtilities.mutateButtonBackgroundColor(Objects
+              .requireNonNull(ResourcesCompat
+                      .getDrawable(getResources(), R.drawable.button, null)), topic.getColor()));
+    }
 
     inflateQuestion(currentIndex);
   }
@@ -47,10 +64,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     question = topic.getQuestions().get(index);
     currentIndex = index;
 
-    // Update the header text with current question index.
-    final TextView headerText = findViewById(R.id.header_text);
-    headerText.setText(getString(R.string.question_header, topic.getTitle(),
-            currentIndex + 1, topic.getQuestions().size()));
+    // Update the Action Bar title with the current question index.
+    final ActionBar actionBar = getSupportActionBar();
+    if (actionBar != null) {
+      actionBar.setTitle(getString(R.string.question_header, topic.getTitle(),
+              currentIndex + 1, topic.getQuestions().size()));
+    }
 
     // Update the question text with the current question.
     final TextView questionText = findViewById(R.id.question_text);

@@ -1,21 +1,23 @@
 package com.ryanwarsaw.coach_erevu.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.ryanwarsaw.coach_erevu.CommonUtilities;
 import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.model.Preferences;
 import com.ryanwarsaw.coach_erevu.model.Topic;
+
+import java.util.Objects;
 
 public class ActionActivity extends AppCompatActivity {
 
@@ -26,6 +28,7 @@ public class ActionActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_action);
+    setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
     // GSON is responsible for serializing and de-serializing our payload data
     // so that we can pass it between activities using intents without problems.
@@ -33,17 +36,23 @@ public class ActionActivity extends AppCompatActivity {
     topic = gson.fromJson(getIntent().getStringExtra("topic"), Topic.class);
     preferences = gson.fromJson(getIntent().getStringExtra("preferences"), Preferences.class);
 
-    // Update header text for the current week we're on.
-    ((TextView) findViewById(R.id.header_text)).setText(topic.getTitle());
+    final ActionBar actionBar = getSupportActionBar();
+    if (actionBar != null) {
+      actionBar.setTitle(topic.getTitle());
+
+      // Set the background of the ActionBar to the color of the category it represents.
+      actionBar.setBackgroundDrawable(CommonUtilities.mutateButtonBackgroundColor(Objects
+              .requireNonNull(ResourcesCompat
+              .getDrawable(getResources(), R.drawable.button, null)), topic.getColor()));
+    }
 
     // Handle when a user interact's with the watch video button.
     final Button videoButton = findViewById(R.id.watch_video_button);
 
     // Dynamically change the button background color based on the content file, without changing
     // the rest of the drawable element's background(s), or other instances of the drawable.
-    ((GradientDrawable) ((LayerDrawable) videoButton.getBackground().mutate())
-            .findDrawableByLayerId(R.id.button_background))
-            .setColor(Color.parseColor(preferences.getVideoButtonColor()));
+    videoButton.setBackground(CommonUtilities
+            .mutateButtonBackgroundColor(videoButton.getBackground(), preferences.getVideoButtonColor()));
 
     videoButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View view) {
@@ -61,9 +70,8 @@ public class ActionActivity extends AppCompatActivity {
 
     // Dynamically change the button background color based on the content file, without changing
     // the rest of the drawable element's background(s), or other instances of the drawable.
-    ((GradientDrawable) ((LayerDrawable) quizButton.getBackground().mutate())
-            .findDrawableByLayerId(R.id.button_background))
-            .setColor(Color.parseColor(preferences.getQuizButtonColor()));
+    quizButton.setBackground(CommonUtilities
+            .mutateButtonBackgroundColor(quizButton.getBackground(), preferences.getQuizButtonColor()));
 
     quizButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View view) {
