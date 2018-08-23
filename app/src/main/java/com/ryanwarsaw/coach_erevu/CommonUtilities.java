@@ -29,6 +29,11 @@ public class CommonUtilities {
     return buttonDrawable;
   }
 
+  /**
+   * Changes the color of the Android status bar, for the given Activity context provided.
+   * @param context The context for the activity we want to change the status color for.
+   * @param hexColor The string hex code of the color we want to apply.
+   */
   public static void setActivityStatusBarColor(Context context, String hexColor) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
       final Window window = ((Activity) context).getWindow();
@@ -38,6 +43,11 @@ public class CommonUtilities {
     }
   }
 
+  /**
+   * Changes the color of the Android status bar, for the given Activity context provided.
+   * @param context The context for the activity we want to change the status color for.
+   * @param colorResourceId The resource id for the Android color resource we want to apply.
+   */
   public static void setActivityStatusBarColor(Context context, int colorResourceId) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
       final Window window = ((Activity) context).getWindow();
