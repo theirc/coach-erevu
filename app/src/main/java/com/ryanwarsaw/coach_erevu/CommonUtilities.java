@@ -1,9 +1,15 @@
 package com.ryanwarsaw.coach_erevu;
 
+import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
+import android.view.Window;
+import android.view.WindowManager;
 
 public class CommonUtilities {
 
@@ -17,9 +23,27 @@ public class CommonUtilities {
   public static LayerDrawable mutateButtonBackgroundColor(Drawable drawable, String hexColor) {
     final LayerDrawable buttonDrawable = (LayerDrawable) drawable.mutate();
     final GradientDrawable backgroundDrawable = (GradientDrawable) buttonDrawable
-            .findDrawableByLayerId(R.id.button_background)
+            .findDrawableByLayerId(R.id.background)
             .mutate();
     backgroundDrawable.setColor(Color.parseColor(hexColor));
     return buttonDrawable;
+  }
+
+  public static void setActivityStatusBarColor(Context context, String hexColor) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+      final Window window = ((Activity) context).getWindow();
+      window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+      window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+      window.setStatusBarColor(Color.parseColor(hexColor));
+    }
+  }
+
+  public static void setActivityStatusBarColor(Context context, int colorResourceId) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+      final Window window = ((Activity) context).getWindow();
+      window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+      window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+      window.setStatusBarColor(ContextCompat.getColor(context, colorResourceId));
+    }
   }
 }

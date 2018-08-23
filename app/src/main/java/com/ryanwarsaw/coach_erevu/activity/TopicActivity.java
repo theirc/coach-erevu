@@ -34,6 +34,8 @@ public class TopicActivity extends AppCompatActivity {
     final Preferences preferences = gson.fromJson(intent
             .getStringExtra("preferences"), Preferences.class);
 
+    CommonUtilities.setActivityStatusBarColor(this, category.getColor());
+
     final ActionBar actionBar = getSupportActionBar();
     if (actionBar != null) {
       actionBar.setTitle(category.getTitle());
@@ -41,7 +43,7 @@ public class TopicActivity extends AppCompatActivity {
       // Set the background of the ActionBar to the color of the category it represents.
       actionBar.setBackgroundDrawable(CommonUtilities.mutateButtonBackgroundColor(Objects
               .requireNonNull(ResourcesCompat
-              .getDrawable(getResources(), R.drawable.button, null)), category.getColor()));
+              .getDrawable(getResources(), R.drawable.header_bar, null)), category.getColor()));
     }
 
     ((ListView) findViewById(R.id.topic_list_options))

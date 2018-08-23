@@ -44,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    // Manually update the orientation when initially starting the app.
-    onConfigurationChanged(getResources().getConfiguration());
+    CommonUtilities.setActivityStatusBarColor(this, R.color.button);
 
     // Mostly for first-time users, makes sure we have proper permissions before inflating content.
     if (!hasPermissions(this, PERMISSIONS)) {

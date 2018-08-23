@@ -15,6 +15,7 @@ import android.widget.Button;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.ryanwarsaw.coach_erevu.CommonUtilities;
 import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.activity.TopicActivity;
@@ -44,9 +45,7 @@ public class CategoryAdapter extends ArrayAdapter<Category> {
 
     // Dynamically change the button background color based on the content file, without changing
     // the rest of the drawable element's background(s), or other instances of the drawable.
-    ((GradientDrawable) ((LayerDrawable) button.getBackground().mutate())
-            .findDrawableByLayerId(R.id.button_background))
-            .setColor(Color.parseColor(category.getColor()));
+    CommonUtilities.mutateButtonBackgroundColor(button.getBackground(), category.getColor());
 
     // Build the intent to launch the topic selector when the user clicks on the button.
     button.setOnClickListener(new View.OnClickListener() {
