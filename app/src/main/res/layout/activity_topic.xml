@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
@@ -12,7 +11,14 @@
     android:layout_height="?android:attr/actionBarSize"
     android:background="@drawable/button"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.10" />
 
   <ListView
     android:id="@+id/topic_list_options"
@@ -22,8 +28,22 @@
     android:dividerHeight="40dp"
     android:padding="25dp"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    app:layout_constraintEnd_toEndOf="@id/guideline_right"
+    app:layout_constraintStart_toStartOf="@id/guideline_left"
+    app:layout_constraintTop_toBottomOf="@id/guideline_header" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent=".10" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent=".90" />
 
 </android.support.constraint.ConstraintLayout>
