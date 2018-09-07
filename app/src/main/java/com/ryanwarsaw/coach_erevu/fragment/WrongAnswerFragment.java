@@ -8,8 +8,6 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ListView;
 
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.coach_erevu.R;
@@ -49,8 +47,6 @@ public class WrongAnswerFragment extends DialogFragment {
   @Override
   public void onCancel(DialogInterface dialog) {
     super.onCancel(dialog);
-    final ListView listView = getActivity().findViewById(R.id.answer_options);
-    listView.setVisibility(View.GONE);
     ((QuizActivity) getActivity()).advanceToNextQuestion();
   }
 

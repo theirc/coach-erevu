@@ -4,7 +4,7 @@
   <color name="colorPrimaryDark">#000</color>
   <color name="colorAccent">#FF4081</color>
   <color name="button">#5ACBF0</color>
-  <color name="buttonBorder">#000</color>
+  <color name="border">#000</color>
   <color name="videoBackground">#000</color>
   <color name="questionText">#000</color>
 </resources>

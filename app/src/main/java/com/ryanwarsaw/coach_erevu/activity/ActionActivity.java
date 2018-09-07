@@ -36,6 +36,8 @@ public class ActionActivity extends AppCompatActivity {
     topic = gson.fromJson(getIntent().getStringExtra("topic"), Topic.class);
     preferences = gson.fromJson(getIntent().getStringExtra("preferences"), Preferences.class);
 
+    CommonUtilities.setActivityStatusBarColor(this, topic.getColor());
+
     final ActionBar actionBar = getSupportActionBar();
     if (actionBar != null) {
       actionBar.setTitle(topic.getTitle());
@@ -43,7 +45,7 @@ public class ActionActivity extends AppCompatActivity {
       // Set the background of the ActionBar to the color of the category it represents.
       actionBar.setBackgroundDrawable(CommonUtilities.mutateButtonBackgroundColor(Objects
               .requireNonNull(ResourcesCompat
-              .getDrawable(getResources(), R.drawable.button, null)), topic.getColor()));
+              .getDrawable(getResources(), R.drawable.header_bar, null)), topic.getColor()));
     }
 
     // Handle when a user interact's with the watch video button.

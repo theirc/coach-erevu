@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_question_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.05" />
+
+  <!-- TODO: Add the AppCompatTextView widget here so stuff doesn't break on older devices -->
+  <TextView
+    android:id="@+id/question"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:autoSizeMaxTextSize="36sp"
+    android:autoSizeMinTextSize="16sp"
+    android:autoSizeTextType="uniform"
+    android:gravity="center"
+    android:textColor="@color/questionText"
+    app:layout_constraintBottom_toBottomOf="@id/guideline_question_footer"
+    app:layout_constraintEnd_toEndOf="@id/guideline_right"
+    app:layout_constraintStart_toStartOf="@id/guideline_left"
+    app:layout_constraintTop_toTopOf="@id/guideline_question_header" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_question_footer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.40" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_hint_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.45" />
+
+  <TextView
+    android:id="@+id/hint"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:autoSizeMaxTextSize="18sp"
+    android:autoSizeMinTextSize="8sp"
+    android:autoSizeTextType="uniform"
+    android:text="@string/free_text_hint"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="1"
+    app:layout_constraintBottom_toBottomOf="@id/guideline_hint_footer"
+    app:layout_constraintEnd_toEndOf="@id/guideline_right"
+    app:layout_constraintStart_toStartOf="@id/guideline_left"
+    app:layout_constraintTop_toTopOf="@id/guideline_hint_header" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_hint_footer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.50" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_free_text_box_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.55" />
+
+  <EditText
+    android:id="@+id/free_text_box"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:background="@drawable/text_input"
+    android:hint="@string/free_text_hint"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:padding="10dp"
+    android:inputType="textCapSentences|textAutoCorrect"
+    app:layout_constraintHorizontal_weight=".80"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/submit_button"
+    app:layout_constraintStart_toEndOf="@+id/guideline_left"
+    app:layout_constraintTop_toBottomOf="@+id/guideline_free_text_box_header" />
+
+  <Button
+    android:id="@+id/submit_button"
+    style="?android:attr/borderlessButtonStyle"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:background="@drawable/button"
+    android:onClick="onClick"
+    android:text="@string/submit_button"
+    app:layout_constraintHorizontal_weight=".20"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+    app:layout_constraintStart_toEndOf="@+id/free_text_box"
+    app:layout_constraintTop_toBottomOf="@+id/guideline_free_text_box_header" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.10" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline_right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.90" />
+
+</android.support.constraint.ConstraintLayout>

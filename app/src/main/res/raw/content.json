@@ -17,12 +17,27 @@
           "video": "week1.mp4",
           "questions": [
             {
-              "question": "What was your overall impression of this video?",
+              "question": "What was your overall impression of this video? This is a really long question that I'm writing to test how the auto scaling shit works on Android so I hope you don't mind my ramblings, I deeply apologize for this inconvenience. Are you still reading this? What are you, crazy or something? Well it appears that my previous attempt wasn't quite long enough so I'm going to keep talking to you in the hopes that this eventually becomes a problem that needs to be solved. You know, Android should make it easier to do this kind of thing it's a common problem that shouldn't need a 3rd party library in order to fix, but yet here we are today and I am now trying to solve this particularly tedious problem.",
               "answer-type": "multiple-choice",
+              "correct-answer": 1,
               "answers": [
                 "I loved it and it was very useful.",
                 "I am neutral and I think it was neither useful nor useless.",
                 "I did not enjoy the video and I thought it was not useful."
+              ]
+            },
+            {
+              "question": "Ni nde yariko avugana nawe muri iyi reresi?",
+              "answer-type": "free-text"
+            },
+            {
+              "question": "What is your name?",
+              "answer-type": "multiple-choice",
+              "correct-answer": 1,
+              "answers": [
+                "Ryan",
+                "Not Ryan",
+                "Bryan"
               ]
             }
           ]
