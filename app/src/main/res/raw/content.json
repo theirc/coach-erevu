@@ -7,51 +7,601 @@
   },
   "categories": [
     {
-      "title": "January",
-      "color": "#FF6347",
+      "title": "Level 1",
+      "color": "#45B39D",
       "topics": [
         {
           "id": 0,
-          "title": "Introduction",
-          "color": "#333333",
-          "video": "week1.mp4",
+          "title": "URUKURIKIRANE",
+          "color": "#45B39D",
+          "video": "[05] Sequence.mp4",
           "questions": [
             {
-              "question": "What was your overall impression of this video? This is a really long question that I'm writing to test how the auto scaling shit works on Android so I hope you don't mind my ramblings, I deeply apologize for this inconvenience. Are you still reading this? What are you, crazy or something? Well it appears that my previous attempt wasn't quite long enough so I'm going to keep talking to you in the hopes that this eventually becomes a problem that needs to be solved. You know, Android should make it easier to do this kind of thing it's a common problem that shouldn't need a 3rd party library in order to fix, but yet here we are today and I am now trying to solve this particularly tedious problem.",
+              "question": "Wabonye gute muri rusangi iyi reresi?",
               "answer-type": "multiple-choice",
-              "correct-answer": 1,
               "answers": [
-                "I loved it and it was very useful.",
-                "I am neutral and I think it was neither useful nor useless.",
-                "I did not enjoy the video and I thought it was not useful."
+                "Nayikunze kandi yari ngira kamaro",
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro"
               ]
             },
             {
-              "question": "Ni nde yariko avugana nawe muri iyi reresi?",
-              "answer-type": "free-text"
+              "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "kwubaka ubwonko bwawe",
+                "kutadohoka",
+                "kugenzura inyiyumvo zawe"
+              ],
+              "correct-answer": 1
             },
             {
-              "question": "What is your name?",
+              "question": "Ni iyihe ntumbero y'agakorwa?",
               "answer-type": "multiple-choice",
-              "correct-answer": 1,
               "answers": [
-                "Ryan",
-                "Not Ryan",
-                "Bryan"
+                "Gufasha abanyeshure kumenya intambuko bategerezwa gufata kugira bashike ku mahangiro yabo.",
+                "Gufasha abanyeshure gushira ku muzirikanyi no kwibuka ivyo bize.",
+                "Gufasha abanyeshure kwiga gukorera mu mugwi no guhanahana ivyiyumviro umwe n'uwundi."
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ibihe imigwi y'abanyeshure itegerezwa gufata nka nkama muri kano gakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Urutonde rw'ibishobisho vyanditswe ku rubaho.",
+                "Ibibazo vyo kubazanya mu gihe hari ikiganiro",
+                "Urukurikirane rw'ibikorwa vyakozwe n'umwigisha"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa guhindura umurwi watanguye ubwa mbere ku muzunguruko uwo ariwo wose kugira ngo imigwi yose igire amahirwe yo kuba iya mbere, iya kari iya gatatu canke ubwa nyuma.",
+                "Notegerezwa kubwira abanyeshure urutonde mu gihe batavyibuka bonyene ubwabo",
+                "Notegerezwa kuraba ko abanyeshure bose bimenyereje ku mwanya umwe"
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa gukarira abanyeshure",
+                "Notegerezwa kukagumisha mu kwongeramwo ibikorwa vyinshi canke kugenda nihutisha ibikorwa",
+                "Notegerezwa guhata abanyeshure kwishura inyishu zibereye"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa gusaba abanyeshure bakuze gusubiramwo ibikorwa basubira inyuma canke ngasaba umugwi uwo ariwo wose kwongeramwo igikorwa mu rukurikirane rw'ibikorwa kugira ngo uwundi mugwi uvyibuke",
+                "Notegerezwa gukora ibikorwa vyinshi mu rukurikirane rw'abana bato",
+                "Notegerezwa kubasigurira amategeko gusa sindabereke uko bikorwa"
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni akahe karore k'ikibazo wobaza abanyeshure bawe mu mwanya w'ikiganiro c'aka gakorwa hitamwo inyishu imwe ibereye)",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Ni gute woshobora gukorera mu runani hamwe n'abandi mu buzima bwa misi yose?",
+                "Ni ubuhe buhinga wakoresheje bwagufashije kwibuka ibikorwa n'urutonde?",
+                "Ni ubuhe bumenyi wakoresheje mu kugenzura ibishobisho vyawe?"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Wokora iki mu gihe abanyeshure bawe badakoze neza ako gakorwa mu mwanya wa mbere bimenyereje?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa kwongeramwo ibikorwa vyinshi mu rukurikirane rwanje kugera abanyeshure batahuye",
+                "Notegerezwa guhagarika igikorwa no kutongera kugakina kandi",
+                "Notegerezwa gutangura kwimenyereza n'igitigiri gito mu rukurikirane rwanje kandi nkimenyereza agakorwa imisi yose"
+              ],
+              "correct-answer": 3
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "UMUTWE IBITUGU AMAVI AMANO",
+          "color": "#45B39D",
+          "video": "[03] Head Shoulders Knees Toes.mp4",
+          "questions": [
+            {
+              "question": "Wabonye gute muri rusangi iyi reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Nayikunze kandi yari ngira kamaro",
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro"
               ]
+            },
+            {
+              "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gukorera mu runani rwiza",
+                "kwubaka ubwonko bwawe",
+                "kugenzura inyiyumvo zawe"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni iyihe ntumbero y'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gufasha abanyeshure kumenya ibishobisho vyabo no kwitekanya",
+                "Gufasha abanyeshure guhindura integuro mu gihe bahuye n'intambamyi",
+                "Gufasha abanyeshure kwibuka amategeko agoye no kubafasha kwiyumvira imbere yo gukora"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni gute wogora abanyeshure muri kano gakorwa",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Mu kubabaza kwiyumvira ukugene botatura impari canke imishamirano",
+                "Mu gukabukanya ibihimba vy'umubiri nk'uku - mu gihe mvuze nti \"kora ku mano, aho wari gukora ku mutwe\"",
+                "Mu gusaba abanyeshure gukora ku bihimba vyinshi bitandukanye vy'umubiri mu kanya gato"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegertezwa misi yose gutanga ivyisungwa mu rutonde rutandukanye mu kuvangamwo amategeko nka: \"kora ku mutwe\", \"kora ku bitugu\", \"kora ku mavi\" canke \"kora ku mano\"",
+                "Notegerezwa gutangura kino gikorwa mu gutanga ivyisungwa mu rutonde rumwe: kora ku mutwe, ibitugu, amavi, hanyuma amano.",
+                "Nokwizigira ko abanyeshure bobikora neza mu kwimenyereza ubwa mbere"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa kudomako urutoke ku banyeshure mu gihe bariko baritwara uko bitabereye no gukoresha inzira zo kubatera intege",
+                "Notegerazwa kugumiza ibihimba vy'umubiri ku rutonde rumwe ibihe vyose",
+                "Notegerezwa guhagarika kwimenyereza hamwe n'abanyeshure mugihe badakoze neza umwimenyerezo wa mbere."
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kutaba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Sinotegerezwa gutera intege abanyeshure ngo bongere bagerageze kandi naho boba bakoze ikosa.",
+                "Sinotegerezwa gukabukanya amazina y'ibihimba vy'umubiri",
+                "Sinotegerezwa kugira agakorwa akagoye mu kunyarutsa canke mu kwongerako amategeko mu gihe abana biriko birabagumira"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni ibiki umunyeshure yotegerezwa kuvuga mu mwanya wo kurongora ikiganiro c'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Vyari bigoye kumenya ibishobisho umugenzi wanje yari yiyumva",
+                "Vyari bigoye kwibuka gukora ahantu hatandukanye kuvyo umwigisha yariko aravuga",
+                "Nize ku bijanye n'umwumvikano"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni kubera iki ari ngira kamaro imisi yose kuvuga ivyisungwa mu rutonde rumwe: kora ku mutwe,ku bitugu, ku mavi hanyuma ku mano?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Ni ngira kamaro gutanga ivisungwa mu rutonde rumwe kuko bifasha abanyeshure gufata urutonde",
+                "Ni ngira kamaro gutanga ivisungwa mu rutonde rumwe kuko bifasha abanyeshure gufata nka nkama mu kwibuka amategeko ha kubaha urutonde rugumye",
+                "Ni ngira kamaro gutanga ivyisungwa mu rutonde rumwe kuko abanyeshure bazobazwa ku rutonde"
+              ],
+              "correct-answer": 2
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "TOMBOZA IBISHOBISHO VYANJE",
+          "color": "#45B39D",
+          "video": "[04] Guess My Emotions.mp4",
+          "questions": [
+            {
+              "question": "Wabonye gute muri rusangi iyi reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Nayikunze kandi yari ngira kamaro",
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro"
+              ]
+            },
+            {
+              "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "kutadohoka",
+                "kwubaka ubwonko bwawe",
+                "kugenzura inyiyumvo zawe"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni iyihe ntumbero y'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gufasha abanyeshure kwitaho no gufatan ku mutwe inkuru",
+                "Gufasha abanyeshure kuvuga, kwibuka no kwerekana ibishobisho bitandukanye",
+                "Gufasha abanyeshure kwiga ukugene botatura impari"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni amahirwe angana gute umurwi w'abanyeshure uhabwa mu gutomboza igishogisho nyakuri?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Umurwi w'abanyeshure uhabwa amahirwe incuro zitatu mu gutomboza igishogisho nyakuri",
+                "Umurwi w'abanyeshure utegerezwa gutomboza igishogisho nyakuri ku ncuro ya mbere",
+                "Umurwi w'abanyeshure ufise amahirwe adaharurika mu gutomboza igishogisho nyakuri."
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa guhana abanyere badashoboye gutomboza igishogisho nyakuri",
+                "Notegerezwa guha umurwi umwe  amahirwe aruta ayo uwundi",
+                "Notegerezwa guhitamwo abanyeshure batandukanye mu kwerekana ibishobisho buri mwanya hamwe no kubihamagariramwo abanyamugwi bose mu gutomboza"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa kwongorera mu gutwi igishogisho catowe abanyeshure badashoboye gusoma",
+                "Notegerezwa guha umurwi umwe  amahirwe aruta ayo uwundi",
+                "Nogerageza gutuma umurwi utomboza ibishobisho ningoga na ningoga"
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa gusaba abanyeshure kumfasha kwandika ibishobisho cumi batoye neza mu gakorwa",
+                "Notegerezwa kubwira umunyeshure uko yerekana igishogisho",
+                "Notegerezwa kureka abanyeshure bagatomboza ibishobisho vyinshi mu kubivuga n'ijwi rirenga"
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni ibiki umunyeshure yotegerezwa kuvuga mu mwanya wo kurongora ikiganiro c'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Nize ukugene nokwitaho ugukurikirana",
+                "Nize ko mu gihe mbonye umuntu yerekana umubabaro notegerezwa kubitahura",
+                "Nize ukuntu nshobora kumenya inyiyumva za bagenzanje"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni akarorero akahe k'igishogisho woshobora kwandika ku gahimba k'urupapuro muri aka gakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gukina umupira w'amaguru",
+                "Kwoga",
+                "Gutangara"
+              ],
+              "correct-answer": 3
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "WOKWIYUMVA GUTE?",
+          "color": "#45B39D",
+          "video": "[01] How Would You Feel.mp4",
+          "questions": [
+            {
+              "question": "Wabonye gute muri rusangi iyi reresi?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Nayikunze kandi yari ngira kamaro",
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro ",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro "
+              ]
+            },
+            {
+              "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Gukorera mu runani rwiza  ",
+                "Gutatura impari n'amatati ",
+                "Kugenzura inyiyumvo zawe "
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni iyihe ntumbero y'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Gufasha abanyeshure gukora neza nk'umurwi",
+                "Gufasha abanyeshure kumenya uko bokwiyumva bafatiye ku biba biriko biraba ",
+                "Gufasha abanyeshure kubaza ibibazo bijanye n'impari canke amatati"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ryari abana bokwerekana igiharuro c'igishogisho bokwiyumva?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "muri urya mwanya nyene umwigisha ariko aravuga agakuru",
+                "Inyuma yuko umwigisha ahejeje kuvuga udukuru  twose dutatu",
+                "Inyuma yuko umwigisha ahejeje kuvuga agakuru kamwe-kamwe  kose "
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Notegerezwa guhindura udukuru mvuga igihe cose ndiko ndimenyerereza hamwe n'abanyeshure ",
+                "Notegerezwa gutera udukuru two gutera ubwoba abanyeshure ",
+                "Notegerezwa gushiraho umukazo ku banyeshure kugira basigure igituma bahisemwo ibishobisho kanaka "
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Notegerezwa kwihutisha abanyeshure mu guhitamwo igishogisho ningoga na ningoga  ",
+                "Notegerezwa kugira agakorwa akagoye ku banyeshure bisumbuye mu kwongeramwo ibishobisho bindi vyinshi bahitamwo ",
+                "Notegerezwa gucira urubanza abanyeshure ku mahitamwo y'ibishobisho kanaka"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Notegerezwa gushushanya ibishobisho ku rubaho mu kworosha agakorwa ku bana badashoboye gusoma ",
+                "Notegerezwa kubwira abanyeshure  gishogisho  kihe kibereye guhitamwo?",
+                "Notegerezwa guhagarika abanyeshure gukina mu gihe bahisemwo igishogisho kitari co"
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni akahe karorero k'ikibazo wobaza abanyeshure bawe mu gihe co kurongora ikiganiro muri aka gakorwa?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Ni gute woshobora gukoresha ubumenyi bwo gufata ku mu mutwe mu buzima bwawe?",
+                "Ni gute woshobora gukinga amatati?",
+                "Kubera iki ari ngira kamaro gushora kumenya uko wokwiyumva bitaragushikira?"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni abahe banyeshure woshobora guhitamwo ngo basangire n'ishure ibishobisho vyabo bahisemwo?",
+              "answer-type": "multiple-choice",
+              "answers":[
+                "Notegerezwa misi yose guhitamwo abanyeshure b'incabwenge ",
+                "Nohitamwo abanyeshure batoye ibishobisho bitandukanye mu gihe badugije ibiganza  ",
+                "Notegerezwa benshi berekanye ko bafise umunezero gusa "
+              ],
+              "correct-answer": 1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "TWENGESHA IGISHUSHO",
+          "color": "#45B39D",
+          "video": "[02] Make the Statue Laugh.mp4",
+          "questions": [
+            {
+              "question": "Wabonye gute muri rusangi iyi reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Nayikunze kandi yari ngira kamaro",
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro "
+              ]
+            },
+            {
+              "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gukorera mu runani rwiza",
+                "Ntudohoke",
+                "kugenzura inyiyumvo zawe"
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni iyihe ntumbero y'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gufasha abanyeshure gutegura amahangiro n'integuro zishikwako",
+                "Gufasha abanyeshure kumenya ibitera amatati",
+                "Gufasha abanyeshure gutahura ko ibikorwa vyabo bishobora guhindura uko abandi biyumva no kugenzura ibishika vyabo"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ninde ari umunyatugenege kandi ni ari igishusho muri aka akorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Umunyeshure ni igishusho umunyeshure nawe ni umunyatugenegene",
+                "Mu mugwi wa 2: umunyeshure umwe ni umunyatugenegene uwundi nawe ni igishusho",
+                "Umwigisha ni igishusho abanyeshure nabo ni abanyatugenegene "
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa kubwira abanyeshure ukugene boshobora gutwengesha bagenzi babo",
+                "Notegerezwa gukora ibishoka  kugira ngo abanyeshure  bose baronke amahirwe yokuba igishusho n'umunyatugenegene",
+                "Notegerezwa guhagarika kwimenyereza agakorwa mu gihe abanyeshure badashoboye gutwengeshanya"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerjwe kureka abanyeshure bagakoranako mu gutwengeshanya",
+                "Notegerezwa kureka abanyeshure gukora ivyo biyumvamwo gukora vyose",
+                "Notegerezwa guca intege abana badashoboye kugenzura agatwengo kabo "
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu utotegerezwa gurakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Sinotegerezwa kureka abanyeshure bakoraneko mu kwimenyereza kano gakorwa",
+                "Sinotegerezwa gushira abanyeshure mu mirwi ya babiri-babiri",
+                "Sinotegerezwa kwitaho imirwi y'abanyeshure babiri-babiri vyadidaniwe"
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni akahe karorero k'ikibazo wobaza abanyeshure bawe mu gihe co kurongora ikiganiro muri aka gakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Kubera iki ari ngira kamaro gushora kumenya uko wokwiyumva bitaragushikira?",
+                "Ni gute ayo matati yotegerejwe kuba yaririnzwe?",
+                "Wibaza ko ibikorwa vyawe bikora ku nyiyumvo za bagenzawe gute buri musi?"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "wokora iki mu gihe abanyeshure bawe babaye ibishusho batwenga ningoga na ningoga?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa kurondera igikorwa gishasha co gukora",
+                "Notegerezwa kubandanya nimenyereza agakorwa buri musi mu gufasha abanyeshure kwimenyereza kugenzura ibishika vyabo",
+                "Notegerezwa guha indero abanyeshure batwenga ningoga"
+              ],
+              "correct-answer": 2
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "IBIBAZO BITANU",
+          "color": "#45B39D",
+          "video": "[10] Five questions.mp4",
+          "questions": [
+            {
+              "question": "Wabonye gute muri rusangi iyi reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Nayikunze kandi yari ngira kamaro",
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro ",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro "
+              ]
+            },
+            {
+              "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Kugenzura inyiyumvo zawe ",
+                "Gutatura impari n'amatati ",
+                "kwubaka ubwonko bwawe"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni iyihe ntumbero y'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gufasha abanyeshure kwitaho ugukurikira no gufata ku mutwe inkuru",
+                "Gufasha abanyeshure kuvuga ,kwibuka no kwerekana ibishobisho bitandukanye",
+                "Gufasha abanyeshure kumenya ibitera amatati biciye mu kubaza ibibazo "
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni akahe karorero kamwe ko mu bibazo bitanu ubaza mu gihe c'amatati?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Ni ayahe mazina yawe?",
+                "Ni hehe amatati yabereye? ",
+                "Ufise basazawe na bashikawe bangahe?"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa guha amahirwe abanyeshure bashoboye kwisura ibibazo bitanu vyose",
+                "Notegerezwa gutera intege abanyeshure mukuvuga inkuru zibaho canke izo biyumviriye zitabayeho.",
+                "Sinotegerezwa guta uturorero tw'amatati mu gukabura abanye"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "I should discipline students if they are not able to answer all five questions",
+                "I should stop practicing the activity if students are not able to answer the five questions ",
+                "I should change the theme of the conflicts each time we practice"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni ikihe kintu utotegerezwa gurakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Sinotegerezwa gutera intege abanyeshure mu kwandika inyishu zabo",
+                "Sinotegerezwa guhata abanyeshure kuvuga udukuru tw'amatati nyakuri",
+                "Sinotegerezwa gutera intege abanyeshure mu kugerageza kwishura ibibazo bitanu neza birenze ubushozi bwabo"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ibiki umunyeshure yotegerezwa kuvuga mu gihe co kurongora ikiganiro mu kano gakorwa",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Umuntu wese ni ngirakamaro mu murwi kandi bose bategerezwa kubamwo",
+                "Aka gakorwa kampa kwumva ntekanye no gushobora kwitaho ibintu",
+                "Dutegerezwa ibihe vyose kubaza ibibazo bitanu mu gihe turi mu matati"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Wotegerezwa gukora iki mu gihe abanyeshure bariko bariko barishura ibibazo bitanu mu nyishu ntonto?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Guhagarika  kwimenyereza aka gakorwa nkaca ntangura ikindi cigwa ",
+                "Gusaba abanyeshure kwongeramwo ibibazo bijanye na kimwe kimwe muri bimwe bitanu nka \"ico guteye kwiyumva gute?\"",
+                "kubwira abanyeshure ko badashoboye muri kano gakorwa."
+              ],
+              "correct-answer": 2
             }
           ]
         }
       ]
     },
     {
-      "title": "February",
-      "color": "#FFD700",
+      "title": "Level 2",
+      "color": "#117A65",
       "topics": [
         {
           "id": 0,
           "title": "Introduction",
-          "color": "#333333",
+          "color": "#117A65",
           "video": "week1.mp4",
           "questions": [
             {
@@ -68,36 +618,13 @@
       ]
     },
     {
-      "title": "March",
-      "color": "#6495ED",
+      "title": "Level 3",
+      "color": "#1A5276",
       "topics": [
         {
           "id": 0,
           "title": "Introduction",
-          "color": "#333333",
-          "video": "week1.mp4",
-          "questions": [
-            {
-              "question": "What was your overall impression of this video?",
-              "answer-type": "multiple-choice",
-              "answers": [
-                "I loved it and it was very useful.",
-                "I am neutral and I think it was neither useful nor useless.",
-                "I did not enjoy the video and I thought it was not useful."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "April",
-      "color": "#9370DB",
-      "topics": [
-        {
-          "id": 0,
-          "title": "Introduction",
-          "color": "#333333",
+          "color": "#1A5276",
           "video": "week1.mp4",
           "questions": [
             {
