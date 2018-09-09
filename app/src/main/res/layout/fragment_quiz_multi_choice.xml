@@ -12,14 +12,13 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_percent="0.05" />
 
-  <!-- Add the AppCompatTextView widget here so stuff doesn't break on older devices -->
-  <TextView
+  <android.support.v7.widget.AppCompatTextView
     android:id="@+id/question"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    android:autoSizeMaxTextSize="36sp"
-    android:autoSizeMinTextSize="16sp"
-    android:autoSizeTextType="uniform"
+    app:autoSizeMaxTextSize="36sp"
+    app:autoSizeMinTextSize="16sp"
+    app:autoSizeTextType="uniform"
     android:gravity="center"
     android:textColor="@color/questionText"
     app:layout_constraintBottom_toBottomOf="@id/guideline_question_footer"
@@ -32,22 +31,22 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_percent="0.40" />
+    app:layout_constraintGuide_percent="0.3" />
 
   <android.support.constraint.Guideline
     android:id="@+id/guideline_hint_header"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_percent="0.45" />
+    app:layout_constraintGuide_percent="0.35" />
 
-  <TextView
+  <android.support.v7.widget.AppCompatTextView
     android:id="@+id/hint"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    android:autoSizeMaxTextSize="18sp"
-    android:autoSizeMinTextSize="8sp"
-    android:autoSizeTextType="uniform"
+    app:autoSizeMaxTextSize="18sp"
+    app:autoSizeMinTextSize="8sp"
+    app:autoSizeTextType="uniform"
     android:text="@string/multiple_choice_hint"
     android:ellipsize="end"
     android:gravity="center"
@@ -62,14 +61,14 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_percent="0.50" />
+    app:layout_constraintGuide_percent="0.4" />
 
   <android.support.constraint.Guideline
     android:id="@+id/guideline_select_option_header"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_percent="0.55" />
+    app:layout_constraintGuide_percent="0.45" />
 
   <ListView
     android:id="@+id/answer_options"

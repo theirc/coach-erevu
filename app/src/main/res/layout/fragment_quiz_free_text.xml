@@ -12,14 +12,13 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_percent="0.05" />
 
-  <!-- TODO: Add the AppCompatTextView widget here so stuff doesn't break on older devices -->
-  <TextView
+  <android.support.v7.widget.AppCompatTextView
     android:id="@+id/question"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    android:autoSizeMaxTextSize="36sp"
-    android:autoSizeMinTextSize="16sp"
-    android:autoSizeTextType="uniform"
+    app:autoSizeMaxTextSize="36sp"
+    app:autoSizeMinTextSize="16sp"
+    app:autoSizeTextType="uniform"
     android:gravity="center"
     android:textColor="@color/questionText"
     app:layout_constraintBottom_toBottomOf="@id/guideline_question_footer"
@@ -41,13 +40,13 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_percent="0.45" />
 
-  <TextView
+  <android.support.v7.widget.AppCompatTextView
     android:id="@+id/hint"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    android:autoSizeMaxTextSize="18sp"
-    android:autoSizeMinTextSize="8sp"
-    android:autoSizeTextType="uniform"
+    app:autoSizeMaxTextSize="18sp"
+    app:autoSizeMinTextSize="8sp"
+    app:autoSizeTextType="uniform"
     android:text="@string/free_text_hint"
     android:ellipsize="end"
     android:gravity="center"
