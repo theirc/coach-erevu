@@ -16,7 +16,8 @@
     app:layout_constraintBottom_toTopOf="@+id/guideline_image_bottom"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="@id/guideline_header" />
+    app:layout_constraintTop_toTopOf="@id/guideline_header"
+    android:contentDescription="@string/logo_description" />
 
   <ListView
     android:id="@+id/menu_options"
