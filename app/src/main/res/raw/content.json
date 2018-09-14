@@ -605,6 +605,103 @@
       "color": "#1A5276",
       "topics": [
         {
+          "id": 0,
+          "title": "KORA IMASHINE",
+          "color": "#1A5276",
+          "video": "[09] Make a Machine.mp4",
+          "questions": [
+            {
+              "question": "Wabonye gute muri ru{sangi iyi reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Nayikunze kandi yari ngira kamaro",
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro"
+              ]
+            },
+            {
+              "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gutatura impari n'amatati",
+                "Gukorera mu runani rwiza",
+                "kugenzura inyiyumvo zawe"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni iyihe ntumbero y'agakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Gufasha abanyeshure kuvuga, kwibuka no kwerekana ibishobisho bitandukanye",
+                "Gufasha abanyeshure kumenya ko abagenzi babo bafitaniye ivyo bahuriyeko n'ubudasa",
+                "Gufasha abanyeshure kwigabura mu mugwi, kwumvirizanya no gusanyira iviyumviro n'abandi"
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni ibiki imigwi y'abanyeshure bategerezwa gukorera mu runani?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Kwiyumvira ku nzira zo gutatura amatati",
+                "Kwerekana uruhara rwa buri muntu canke ibihimba",
+                "Kwiga kwererekana ibishobisho ukoresheje ibimenyetso vyo mu maso"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa gutera intege abanyeshure bose mu mashine mu gusigura ibikorwa vyabo",
+                "Notegerezwa guhitamwo gusa imigwi mu gusabikanya ivyiza muri aka gakorwa",
+                "Notegerezwa kwemerera abanyeshure bamwe bamwe kwigira inyuma no kutaba mu bigze imashine "
+              ],
+              "correct-answer": 1
+            },
+            {
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa guha amahirwe imigwi yabikoze neza",
+                "Notegerezwa gutanga uburorero mu gihe abanyeshure badashoboye kwiyumvira ku mashine canke badashoboye kwiyumvira ukwikora.",
+                "Notegerezwa kubwira abanyeshure ibikora imashine. "
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ikihe kintu utotegerezwa kuba uriko urakora?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Notegerezwa kubwira abanyeshure uko ibikorwa vyose bigenda",
+                "Notegerezwa guhitamwo umugwi urya nyene mu gusabikanya buri mwanya twimenyereje akagakorwa",
+                "Notegerezwa kubwira abanyeshure uko vyagenze ku bijanye nuko bakoreye mu runani gwiza canke ivyo botegerezwa gukorera hamwe neza muri kazoza "
+              ],
+              "correct-answer": 3
+            },
+            {
+              "question": "Ni akahe karore k'ikibazo wotegerezwa kubaza abanyeshure mu kiganiro c'aka gakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Ni gute amatati yoshobora gukingwa?",
+                "Ni gute mwahisemwo uruhara rw'umwe umwe muri mwebwe rw'ico ategerezwa gukina ku mashine?",
+                "Ni ibihe mwize ku bijanye n'umubiri wacu n'inyiyumvo zacu muri aka gakorwa?"
+              ],
+              "correct-answer": 2
+            },
+            {
+              "question": "Ni ibiki wotegerezwa gufasha abanyeshure muri aka gakorwa?",
+              "answer-type": "multiple-choice",
+              "answers": [
+                "Abanyeshure bategerezwa kuyaga ukuntu iyo nyifato yabateye kwiyumva",
+                "Abanyeshure bategerezwa kwiyemeza mu kiganiro ico bubaka n'ico umuntu wese ategerezwa gukora batarinze kubifashwamwo n'umwigisha",
+                "Abanyeshure bategerezwa guhumiriza amaso yabo no guheme bashikana mu gihe c'agakorwa"
+              ],
+              "correct-answer": 2
+            }
+          ]
+        },
+        {
           "id": 1,
           "title": "UMUYAGA URAHUHUTA",
           "color": "#1A5276",
