@@ -443,7 +443,7 @@
               "question": "Ni ryari abana bokwerekana igiharuro c'igishogisho bokwiyumva?",
               "answer-type": "multiple-choice",
               "answers":[
-                "muri urya mwanya nyene umwigisha ariko aravuga agakuru",
+                "Muri urya mwanya nyene umwigisha ariko aravuga agakuru",
                 "Inyuma yuko umwigisha ahejeje kuvuga udukuru  twose dutatu",
                 "Inyuma yuko umwigisha ahejeje kuvuga agakuru kamwe-kamwe  kose "
               ],
@@ -977,7 +977,7 @@
               "correct-answer": 2
             },
             {
-              "question": "Ni ibiki umunyeshure yotegerezwa kuvuga mu gihe co kurongora ikiganiro mu kano gakorwa",
+              "question": "Ni ibiki umunyeshure yotegerezwa kuvuga mu gihe co kurongora ikiganiro mu kano gakorwa?",
               "answer-type": "multiple-choice",
               "answers": [
                 "Umuntu wese ni ngirakamaro mu murwi kandi bose bategerezwa kubamwo",
