@@ -1,0 +1,97 @@
+{
+  "id": 0,
+  "title": "AMATATI ARIGISHA",
+  "color": "#45B39D",
+  "video": "",
+  "questions": [
+    {
+      "question": "Wabonye gute muri rusangi iyi reresi?",
+      "answers": [
+        "Nayikunze kandi yari ngira kamaro",
+        "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+        "Sinahimbawe n’iyi reresi kandi nibaza ko itari ngira kamaro"
+      ],
+      "answer-type": "multiple-choice"
+    },
+    {
+      "question": "Ni ubuhe bushobozi buri muri ino reresi?",
+      "answers": [
+        "kutadohoka",
+        "kwubaka ubwonko bwawe",
+        "Ugutatura amatati hamwe n’impari"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 3
+    },
+    {
+      "question": "Ni iyihe ntumbero y'agakorwa?",
+      "answers": [
+        "Gufasha abanyeshure gutahura ko bagenzi babo bafise ivyo bahuriyeko hamwe n’ivyo bahuriyeko",
+        "Gufasha abanyeshure kumenya ibitera amatati hamwe n’inzira zo kuyatatura",
+        "Gufasha abnyeshure kwiga kugenzura ibishika vyabo"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 2
+    },
+    {
+      "question": "Haba iki iyo umurwi uhejeje kwereka isomero amatati yawo",
+      "answers": [
+        "Isomero riratanga inzira zo gutatura ayo matati umurwi wasabikanije",
+        "Umwigisha arashimira uwo murwi bagaca bicara",
+        "Umurwi urasabikanya ukuntu wari gutatura amatati"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 1
+    },
+    {
+      "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+      "answers": [
+        "Notegerezwa gutondeka amatati ku kibaho mu gihe isomero ririko rirayatanga",
+        "Notegerezwa kwandika umuti w’ayo matati yatanzwe n’abanyeshure ku kibaho ntakoresheje ijambo ku rindi.",
+        "Notegerezwa kubwira abanyeshure banje ko amatati biyumviriyeko kari akarorero kabi hanyuma nkabasaba kwicara"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 1
+    },
+    {
+      "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
+      "answers": [
+        "Notegerezwa gusabikanya uburorero bumwe bumwe bw’amatati hamwe n’inzira zo gutatura ayo matati mu gihe abanyeshure bibagora kuyiyumvira",
+        "Notegerezwa guha abanyeshure uburorero bwose hamwe n’umuti wo gutatura amatati",
+        "Notegerezwa kubwira abanyeshure neza na neza ukuntu botaturha ayo matati"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 1
+    },
+    {
+      "question": "Ni ikihe kintu wotegerezwa kuba utariko urakora?",
+      "answers": [
+        "Sintegerezwa gutera intege abanyeshure ngo batange uburorero bwabo bw’amatati hamwe n’umuti wayo",
+        "Sintegerezwa guha abanyeshure uko vyagenze ku bijanye n’ivyogenda neza hamwe n’ivyogenda nabi mu gihe bariko baratatura amatati",
+        "Isintegerezwa kureka abanyeshure batate bakoranako ku mubiri iyo bariko barerekana canke bakina bigirisha amatati yabo"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 3
+    },
+    {
+      "question": "Ni akahe karorero k'ikibazo wotegerezwa kubaza mu mwanya w’igice c’ikiganiro c’aka gakorwa?",
+      "answers": [
+        "Ni ubuhe buhinga bushasha wize bujanye n’ukuntu utatura amatati?",
+        "Ni kuki ari ngirakamaro gushobora kwiyumvamwo inyiyumvo zitaraba?",
+        "Ni kuki wibaza ko ari ngirakamaro kumenya ihuriro hamwe n’ubudasa mu bo mwigana?"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 1
+    },
+    {
+      "question": "Wotegerezwa gukora iki mu gihe abanyeshure bawe bama basabikanya ubwoko bumwe bw'amatati buri gihe ukoresheje iki gikorwa?",
+      "answers": [
+        "Notegerezwa guhitamwo abanyeshure bameze neza gusa mu gutera inkuru zijanye n’amatati",
+        "Notegerezwa gusabikanya ibigize amatati bitandukanye mu kugerageza abanyeshure bahindagure udukuru",
+        "Notegerezwa guhata abanyeshue ngo basabikanye amatati y’ukuri yabashikiye mu buzima bwabo"
+      ],
+      "answer-type": "multiple-choice",
+      "correct-answer": 2
+    }
+  ]
+}
