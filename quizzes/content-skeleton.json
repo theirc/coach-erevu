@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "preferences": {
+    "quiz-button-color": "#59A4CB",
+    "video-button-color": "#5ACBF0",
+    "wrong-answer-button-color": "#59A4CB"
+  },
+  "categories": [
+    {
+      "title": "Level 1",
+      "color": "#F8C90F",
+      "topics": [
+      ]
+    },
+    {
+      "title": "Level 2",
+      "color": "#4CB648",
+      "topics": [
+      ]
+    },
+    {
+      "title": "Level 3",
+      "color": "#3B8CCB",
+      "topics": [
+      ]
+    },
+    {
+      "title": "Level 4",
+      "color": "#8C4499",
+      "topics": [
+        {
+          "video": "",
+          "json": "Conflict Teaches.txt.json"
+        }
+      ]
+    },
+    {
+      "title": "Level 5",
+      "color": "#EE3B48",
+      "topics": [
+        {
+          "video": "",
+          "json": "Be an Artist.txt.json"
+        }
+      ]
+    }
+  ]
+}
