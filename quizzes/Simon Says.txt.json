@@ -8,8 +8,8 @@
       "question": "Wabonye gute muri rusangi iyi reresi?",
       "answers": [
         "Nayikunze kandi yari ngira kamaro",
-        "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro ",
-        "Sinahimbawe niyi reresi kandi nibaza ko itari ngira kamaro "
+        "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+        "Sinahimbawe niyi reresi kandi nibaza ko itari ngira kamaro"
       ],
       "answer-type": "multiple-choice"
     },
@@ -18,7 +18,7 @@
       "answers": [
         "Kugenzura inyiyumvo zawe",
         "Kwubaka ubwonko bwawe",
-        "Gutatura impari n’ amatati "
+        "Gutatura impari n' amatati"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 2
@@ -27,8 +27,8 @@
       "question": "Ni iyihe ntumbero y'agakorwa?",
       "answers": [
         "Gufasha abanyeshure kwumviriza no kugenzura ibikorwa vyabo.",
-        "Gufasha abanyeshure kwiga ingendo nshasha ",
-        "Gufasha abanyeshure gukorera mu runani "
+        "Gufasha abanyeshure kwiga ingendo nshasha",
+        "Gufasha abanyeshure gukorera mu runani"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 1
@@ -36,8 +36,8 @@
     {
       "question": "Ni ryari abanyeshure bategerezwa gusubiramwo ibikorwa vyakozwe n'umwigisha?",
       "answers": [
-        "Mu gihe abigisha bavuze “ikome”",
-        "Mu gihe abigisha bavuze “Simoni avuze”",
+        "Mu gihe abigisha bavuze \"ikome\"",
+        "Mu gihe abigisha bavuze \"Simoni avuze\"",
         "Mu gihe umwigisha acereje"
       ],
       "answer-type": "multiple-choice",
@@ -46,17 +46,17 @@
     {
       "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
       "answers": [
-        "Notegerezwa kubwira abanyeshure kwicara mu gihe bagize ikimenyetso ntavuze “Simoni avuze”",
+        "Notegerezwa kubwira abanyeshure kwicara mu gihe bagize ikimenyetso ntavuze \"Simoni avuze\"",
         "Notegerezwa guhana abanyeshure bakoze nabi",
-        "Notegerezwa kugenda nyarutsa ibihe vyose "
+        "Notegerezwa kugenda nyarutsa ibihe vyose"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 1
     },
     {
-      "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?(hitamwo inyishu imwe)",
+      "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
       "answers": [
-        "Sinotegerezwa kuvuga “Simoni avuga”",
+        "Sinotegerezwa kuvuga \"Simoni avuga\"",
         "Sinotegerezwa gutuma abana bava mu bibanza vyabo bicaramwo",
         "Sinotgerezwa kuvuga ivyo turiko turiga"
       ],
@@ -66,17 +66,17 @@
     {
       "question": "Ni ikihe kintu utotegerezwa gurakora?",
       "answers": [
-        "Sinotegerezwa gutwenga ",
-        "Sinotegerezwa kuba neza ",
-        "Sinotegerezwa kuvuga “Simoni avuze” kenshi cane mu gishingo kimwe"
+        "Sinotegerezwa gutwenga",
+        "Sinotegerezwa kuba neza",
+        "Sinotegerezwa kuvuga \"Simoni avuze\" kenshi cane mu gishingo kimwe"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 3
     },
     {
-      "question": "Ni akahe karore k'ikibazo wotegerezwa kubaza abanyeshure mu kiganiro c’aka gakorwa?",
+      "question": "Ni akahe karore k'ikibazo wotegerezwa kubaza abanyeshure mu kiganiro c'aka gakorwa?",
       "answers": [
-        "Ni gute twokoresha ubumenyi twize muri aka gakorwa kw’ishure canke i muhira?",
+        "Ni gute twokoresha ubumenyi twize muri aka gakorwa kw'ishure canke i muhira?",
         "Ni kubera iki ari ngirakamaro kumenya inyiyumvo zacu zitaraba?",
         "Wibaza ko ari gute ibikorwa vyawe bikora ku nyiyumvo za bagenzawe buri musi?"
       ],
@@ -86,7 +86,7 @@
     {
       "question": "Ni gute wogira aka gakorwa akagumye ku banyeshure bakuze?",
       "answers": [
-        "Vuga amategeko witonze ",
+        "Vuga amategeko witonze",
         "Vuga amategeko mu gihe gusa abanyeshure bicaye.",
         "Vuga amategeko arimwo ibikorwa bibiri"
       ],
