@@ -70,23 +70,31 @@ public class ActionActivity extends AppCompatActivity {
 
     final Button quizButton = findViewById(R.id.take_quiz_button);
 
-    // Dynamically change the button background color based on the content file, without changing
-    // the rest of the drawable element's background(s), or other instances of the drawable.
-    quizButton.setBackground(CommonUtilities
-            .mutateButtonBackgroundColor(quizButton.getBackground(), preferences.getQuizButtonColor()));
+    // If there are questions listed in the json object, then we can activate the quiz button.
+    // Otherwise, we hide it because there is no quiz to show.
+    if (topic.getQuestions() != null) {
 
-    quizButton.setOnClickListener(new View.OnClickListener() {
-      public void onClick(View view) {
-        if (topic.getQuestions().size() > 0) {
-          final Intent intent = new Intent(ActionActivity.this, QuizActivity.class);
-          intent.putExtra("topic", gson.toJson(topic));
-          intent.putExtra("preferences", gson.toJson(preferences));
+      // Dynamically change the button background color based on the content file, without changing
+      // the rest of the drawable element's background(s), or other instances of the drawable.
+      quizButton.setBackground(CommonUtilities
+              .mutateButtonBackgroundColor(quizButton.getBackground(), preferences.getQuizButtonColor()));
 
-          MainActivity.getLoggingHandler().write(ActionActivity.this.getClass().getSimpleName(),
-              "BUTTON_QUIZ_PRESS", topic.getTitle());
-          ActionActivity.this.startActivity(intent);
+      quizButton.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View view) {
+          if (topic.getQuestions().size() > 0) {
+            final Intent intent = new Intent(ActionActivity.this, QuizActivity.class);
+            intent.putExtra("topic", gson.toJson(topic));
+            intent.putExtra("preferences", gson.toJson(preferences));
+
+            MainActivity.getLoggingHandler().write(ActionActivity.this.getClass().getSimpleName(),
+                "BUTTON_QUIZ_PRESS", topic.getTitle());
+            ActionActivity.this.startActivity(intent);
+          }
         }
-      }
-    });
+      });
+    }
+    else {
+      quizButton.setVisibility(View.INVISIBLE);
+    }
   }
 }
