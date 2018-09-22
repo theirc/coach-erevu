@@ -75,7 +75,7 @@
               "answers": [
                 "Notegerezwa gutondeka amatati ku kibaho mu gihe isomero ririko rirayatanga",
                 "Notegerezwa kwandika umuti w'ayo matati yatanzwe n'abanyeshure ku kibaho ntakoresheje ijambo ku rindi.",
-                "Notegerezwa kubwira abanyeshure banje ko amatati biyumviriyeko kari akarorero kabi hanyuma nkabasaba kwicara"
+                "Notegerezwa kubwira abanyeshure banje ko amatati biyumviriyeko ko ari akarorero kabi hanyuma nkabasaba kwicara"
               ],
               "answer-type": "multiple-choice",
               "correct-answer": 1
@@ -111,7 +111,7 @@
               "correct-answer": 1
             },
             {
-              "question": "Wotegerezwa gukora iki mu gihe abanyeshure bawe bama basabikanya ubwoko bumwe bw'amatati buri gihe ukoresheje iki gikorwa?",
+              "question": "Wotegerezwa gukora iki mu gihe abanyeshure bawe bama basabikanya ubwoko bumwe bw'amatati buri gihe ukoresheje aka gikorwa?",
               "answers": [
                 "Notegerezwa guhitamwo abanyeshure bameze neza gusa mu gutera inkuru zijanye n'amatati",
                 "Notegerezwa gusabikanya ibigize amatati bitandukanye mu kugerageza abanyeshure bahindagure udukuru",
