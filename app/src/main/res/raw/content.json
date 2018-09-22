@@ -991,91 +991,91 @@
           "questions": [
             {
               "question": "Wabonye gute muri rusangi iyi reresi?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Nayikunze kandi yari ngira kamaro",
-                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro ",
-                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro "
-              ]
+                "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
+                "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro"
+              ],
+              "answer-type": "multiple-choice"
             },
             {
               "question": "Ni ubuhe bushobozi buri muri ino reresi?",
-              "answer-type": "multiple-choice",
               "answers": [
-                "Kugenzura inyiyumvo zawe ",
-                "Gutatura impari n'amatati ",
+                "Kugenzura inyiyumvo zawe",
+                "Gutatura impari n'amatati",
                 "kwubaka ubwonko bwawe"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             },
             {
               "question": "Ni iyihe ntumbero y'agakorwa?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Gufasha abanyeshure kwitaho ugukurikira no gufata ku mutwe inkuru",
                 "Gufasha abanyeshure kuvuga ,kwibuka no kwerekana ibishobisho bitandukanye",
-                "Gufasha abanyeshure kumenya ibitera amatati biciye mu kubaza ibibazo "
+                "Gufasha abanyeshure kumenya ibitera amatati biciye mu kubaza ibibazo"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 3
             },
             {
               "question": "Ni akahe karorero kamwe ko mu bibazo bitanu ubaza mu gihe c'amatati?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Ni ayahe mazina yawe?",
-                "Ni hehe amatati yabereye? ",
+                "Ni hehe amatati yabereye?",
                 "Ufise basazawe na bashikawe bangahe?"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             },
             {
               "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
-              "answer-type": "multiple-choice",
               "answers": [
-                "Notegerezwa guha amahirwe abanyeshure bashoboye kwisura ibibazo bitanu vyose",
+                "Notegerezwa guha amahirwe abanyeshure bashoboye kwishura ibibazo bitanu vyose",
                 "Notegerezwa gutera intege abanyeshure mukuvuga inkuru zibaho canke izo biyumviriye zitabayeho.",
-                "Sinotegerezwa guta uturorero tw'amatati mu gukabura abanye"
+                "Sinotegerezwa gutanga uturorero tw'amatati mu gukabura abanyeshure"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             },
             {
               "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
-              "answer-type": "multiple-choice",
               "answers": [
-                "I should discipline students if they are not able to answer all five questions",
-                "I should stop practicing the activity if students are not able to answer the five questions ",
-                "I should change the theme of the conflicts each time we practice"
+                "Notegerezwa guhana abanyeshure mu gihe badashoboye kwishure ibibazo bitanu vyose",
+                "Notegerezwa guhagarika kwimenyereza agakorwa mu gihe abanyeshure badashoboye kwishura ibibazo vyose bitanu",
+                "Notegerezwa guhindura umutwe w'icigwa c'amatati igihe cose twimenyereje"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 3
             },
             {
               "question": "Ni ikihe kintu utotegerezwa gurakora?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Sinotegerezwa gutera intege abanyeshure mu kwandika inyishu zabo",
                 "Sinotegerezwa guhata abanyeshure kuvuga udukuru tw'amatati nyakuri",
                 "Sinotegerezwa gutera intege abanyeshure mu kugerageza kwishura ibibazo bitanu neza birenze ubushozi bwabo"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             },
             {
-              "question": "Ni ibiki umunyeshure yotegerezwa kuvuga mu gihe co kurongora ikiganiro mu kano gakorwa?",
-              "answer-type": "multiple-choice",
+              "question": "Ni ibiki umunyeshure yotegerezwa kuvuga mu gihe co kurongora ikiganiro muri kano gakorwa?",
               "answers": [
                 "Umuntu wese ni ngirakamaro mu murwi kandi bose bategerezwa kubamwo",
                 "Aka gakorwa kampa kwumva ntekanye no gushobora kwitaho ibintu",
                 "Dutegerezwa ibihe vyose kubaza ibibazo bitanu mu gihe turi mu matati"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 3
             },
             {
-              "question": "Wotegerezwa gukora iki mu gihe abanyeshure bariko bariko barishura ibibazo bitanu mu nyishu ntonto?",
-              "answer-type": "multiple-choice",
+              "question": "Wotegerezwa gukora iki mu gihe abanyeshure bariko barishura ibibazo bitanu mu nyishu ntonto?",
               "answers": [
-                "Guhagarika  kwimenyereza aka gakorwa nkaca ntangura ikindi cigwa ",
-                "Gusaba abanyeshure kwongeramwo ibibazo bijanye na kimwe kimwe muri bimwe bitanu nka \"ico guteye kwiyumva gute?\"",
+                "Guhagarika kwimenyereza aka gakorwa nkaca ntangura ikindi cigwa",
+                "Gusaba abanyeshure kwongeramwo ibibazo bijanye na kimwe kimwe muri bimwe bitanu nka \"ico caguteye kwiyumva gute?\"",
                 "kubwira abanyeshure ko badashoboye muri kano gakorwa."
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             }
           ]
