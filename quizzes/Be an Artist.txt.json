@@ -14,7 +14,7 @@
       "answer-type": "multiple-choice"
     },
     {
-      "question": "What competency does this video cover?",
+      "question": "Ni ubuhe bushobozi buri muri ino reresi?",
       "answers": [
         "Kutadohoka",
         "Ukugenzura inyiyumvo zawe",
@@ -26,8 +26,8 @@
     {
       "question": "Ni iyihe ntumbero y'agakorwa?",
       "answers": [
-        "Gufasha ababnyeshure kuryohora ubumenyi bwabo bwo gufata ku mutwe",
-        "Gufasha ababnyeshure kwiga kurondera izindi nteguro mu gihe bahuye n'igikorwa kigoye",
+        "Gufasha abanyeshure kuryohora ubumenyi bwabo bwo gufata ku mutwe",
+        "Gufasha abanyeshure kwiga kurondera izindi nteguro mu gihe bahuye n'igikorwa kigoye",
         "Gufasha abanyeshure kumenya inyiyumvo ziri mu bandi"
       ],
       "answer-type": "multiple-choice",
@@ -66,7 +66,7 @@
     {
       "question": "Ni ikihe kintu wotegerezwa kuba utariko urakora?",
       "answers": [
-        "Sinotegerezwa guha abanyeshure ishusho nyezina canke ivyo bisunga mu gucapa nk \"ibikoko\" canke \"inzu\"",
+        "Sinotegerezwa guha abanyeshure ishusho nyezina canke ivyo bisunga mu gucapa nk' \"ibikoko\" canke \"inzu\"",
         "Sinotegerezwa kubwira ananyeshure ico bakora",
         "Sinotegerezwa kureka abanyeshure ngo bahindure integuro zabo mu gucapa amashusho"
       ],

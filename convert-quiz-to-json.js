@@ -57,7 +57,7 @@ fs.readdir(quizFolder, (err, files) => {
 
         lines.shift();
 
-        question = question.replace(/\d+\.\s+/, '');
+        question = question.replace(/^\d+\.\s*/, '');
         question = question.replace('(hitamwo inyishu imwe ibereye)', '');
         question = question.replace('(hitamwo inyishu imwe)', '');
         question = question.replace('(hitamwo kimwe)', '');
