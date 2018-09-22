@@ -1,5 +1,5 @@
 AMATATI ARIGISHA
- 
+
 1. Wabonye gute muri rusangi iyi reresi ? (hitamwo kimwe)  
 Nayikunze kandi yari ngira kamaro
 Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro
@@ -23,14 +23,14 @@ Umurwi urasabikanya ukuntu wari gutatura amatati
 5. Ni ikihe kintu wotegerezwa kuba uriko urakora? (hitamwo inyishu imwe ibereye)
 Notegerezwa gutondeka amatati ku kibaho mu gihe isomero ririko rirayatanga[CORRECT]
 Notegerezwa kwandika umuti w’ayo matati yatanzwe n’abanyeshure ku kibaho ntakoresheje ijambo ku rindi.
-Notegerezwa kubwira abanyeshure banje ko amatati biyumviriyeko kari akarorero kabi hanyuma nkabasaba kwicara
+Notegerezwa kubwira abanyeshure banje ko amatati biyumviriyeko ko ari akarorero kabi hanyuma nkabasaba kwicara
  
 6. Ni ikihe kintu wotegerezwa kuba uriko urakora? (hitamwo inyishu imwe ibereye)
 Notegerezwa gusabikanya uburorero bumwe bumwe bw’amatati hamwe n’inzira zo gutatura ayo matati mu gihe abanyeshure bibagora kuyiyumvira[CORRECT]
 Notegerezwa guha abanyeshure uburorero bwose hamwe n’umuti wo gutatura amatati
 Notegerezwa kubwira abanyeshure neza na neza ukuntu botaturha ayo matati
  
-7. Ni ikihe kintu wotegerezwa kuba utariko urakora? (hitamwo inyishu imwe ibereye)
+7.  Ni ikihe kintu wotegerezwa kuba utariko urakora? (hitamwo inyishu imwe ibereye)
 Sintegerezwa gutera intege abanyeshure ngo batange uburorero bwabo bw’amatati hamwe n’umuti wayo
 Sintegerezwa guha abanyeshure uko vyagenze ku bijanye n’ivyogenda neza hamwe n’ivyogenda nabi mu gihe bariko baratatura amatati
 Isintegerezwa kureka abanyeshure batate bakoranako ku mubiri iyo bariko barerekana canke bakina bigirisha amatati yabo[CORRECT]
@@ -40,7 +40,7 @@ Ni ubuhe buhinga bushasha wize bujanye n’ukuntu utatura amatati?[CORRECT]
 Ni kuki ari ngirakamaro gushobora kwiyumvamwo inyiyumvo zitaraba?
 Ni kuki wibaza ko ari ngirakamaro kumenya ihuriro hamwe n’ubudasa mu bo mwigana?
  
-9. Wotegerezwa gukora iki mu gihe abanyeshure bawe bama basabikanya ubwoko bumwe bw’amatati buri gihe ukoresheje iki gikorwa? (hitamwo inyishu imwe ibereye)
+9. Wotegerezwa gukora iki mu gihe abanyeshure bawe bama basabikanya ubwoko bumwe bw’amatati buri gihe ukoresheje aka gikorwa? (hitamwo inyishu imwe ibereye)
 Notegerezwa guhitamwo abanyeshure bameze neza gusa mu gutera inkuru zijanye n’amatati
 Notegerezwa gusabikanya ibigize amatati bitandukanye mu kugerageza abanyeshure bahindagure udukuru[CORRECT]
 Notegerezwa guhata abanyeshue ngo basabikanye amatati y’ukuri yabashikiye mu buzima bwabo

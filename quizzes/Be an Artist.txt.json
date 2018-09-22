@@ -9,12 +9,12 @@
       "answers": [
         "Nayikunze kandi yari ngira kamaro",
         "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
-        "Sinahimbawe n’iyi reresi kandi nibaza ko itari ngira kamaro"
+        "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro"
       ],
       "answer-type": "multiple-choice"
     },
     {
-      "question": "What competency does this video cover?",
+      "question": "Ni ubuhe bushobozi buri muri ino reresi?",
       "answers": [
         "Kutadohoka",
         "Ukugenzura inyiyumvo zawe",
@@ -26,8 +26,8 @@
     {
       "question": "Ni iyihe ntumbero y'agakorwa?",
       "answers": [
-        "Gufasha ababnyeshure kuryohora ubumenyi bwabo bwo gufata ku mutwe",
-        "Gufasha ababnyeshure kwiga kurondera izindi nteguro mu gihe bahuye n’igikorwa kigoye",
+        "Gufasha abanyeshure kuryohora ubumenyi bwabo bwo gufata ku mutwe",
+        "Gufasha abanyeshure kwiga kurondera izindi nteguro mu gihe bahuye n'igikorwa kigoye",
         "Gufasha abanyeshure kumenya inyiyumvo ziri mu bandi"
       ],
       "answer-type": "multiple-choice",
@@ -36,9 +36,9 @@
     {
       "question": "Ni igiki wokwibutsa abanyeshure bawe mu gihe bariko barakora aka gakorwa?",
       "answers": [
-        "Kwibutsa abanyeshure kwama bibuka kubaza ibibazo igihe bahuye n’amatati kugira ngo bige vyinshi kuri izo ngorane",
+        "Kwibutsa abanyeshure kwama bibuka kubaza ibibazo igihe bahuye n'amatati kugira ngo bige vyinshi kuri izo ngorane",
         "Kwibutsa abanyeshure ko iyo integuro yabo ya mbere itagenze neza, barashobora kuyihindura",
-        "Kwibutsa abanyeshure kwerekana ibishobisho, atari ukwerekana ibikorwa nk’ugukina umupira"
+        "Kwibutsa abanyeshure kwerekana ibishobisho, atari ukwerekana ibikorwa nk'ugukina umupira"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 2
@@ -57,7 +57,7 @@
       "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
       "answers": [
         "Notegerezwa kubwira abanyeshure baheze agakorwa ningoga",
-        "Notegerezwa kuguma ndi imvuga kuri kandi ndabibakundisha, n’ubwo abanyeshureboba bobabafise ingorane muri aka gakorwa",
+        "Notegerezwa kuguma ndi imvuga kuri kandi ndabibakundisha, n'ubwo abanyeshureboba bobabafise ingorane muri aka gakorwa",
         "Notegerezwa kubwira abanyeshure ukuntu bakorera hamwe mu gucapa igicapu"
       ],
       "answer-type": "multiple-choice",
@@ -66,7 +66,7 @@
     {
       "question": "Ni ikihe kintu wotegerezwa kuba utariko urakora?",
       "answers": [
-        "Sinotegerezwa guha abanyeshure ishusho nyezina canke ivyo bisunga mu gucapa nk \"ibikoko\" canke \"inzu\"",
+        "Sinotegerezwa guha abanyeshure ishusho nyezina canke ivyo bisunga mu gucapa nk' \"ibikoko\" canke \"inzu\"",
         "Sinotegerezwa kubwira ananyeshure ico bakora",
         "Sinotegerezwa kureka abanyeshure ngo bahindure integuro zabo mu gucapa amashusho"
       ],
@@ -74,7 +74,7 @@
       "correct-answer": 2
     },
     {
-      "question": "Ni akahe karorero k'ikibazo wotegerezwa kubaza mu mwanya w’igice c’ikiganiro c’aka gakorwa?",
+      "question": "Ni akahe karorero k'ikibazo wotegerezwa kubaza mu mwanya w'igice c'ikiganiro c'aka gakorwa?",
       "answers": [
         "Ni gute wiyumvira ko ivyo ukora misi yose bihindura inyiyumvo za bagenzawe?",
         "Ni kuki ari ngirakamaro kwiyumvamwo inyiyumvo zitaraba?",
@@ -88,7 +88,7 @@
       "answers": [
         "Mu kubwira abanyeshure ukuntu batorera umuti ingorane hanyuma rero nkabasaba kubisubiramwo",
         "Mu kubatuma gufata k8u mutwe ukuntu batorera umuti ingorane",
-        "Mu kureka abanyeshure bakironderera umuti w’ingorane atarinze kubafasha"
+        "Mu kureka abanyeshure bakironderera umuti w'ingorane atarinze kubafasha"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 3

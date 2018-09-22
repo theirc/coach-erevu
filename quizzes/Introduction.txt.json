@@ -9,7 +9,7 @@
       "answers": [
         "Nayikunze kandi yari ngirakamaro cane",
         "Ndi ntaho mpagaze kandi niyumvira ko itari ngirakamaro canke ataco imaze",
-        "Sinanezerejwe n’iyi reresi kandi niyumviriye ko itari ngirakamaro"
+        "Sinanezerejwe n'iyi reresi kandi niyumviriye ko itari ngirakamaro"
       ],
       "answer-type": "multiple-choice"
     },
@@ -18,7 +18,7 @@
       "answers": [
         "Uyu muntu araciye ubwenge cane kandi yatumye ndabikunda",
         "Sindabizi neza",
-        "Uyu muntu ntabushobozi afise bw’ukugira ico anyigishije."
+        "Uyu muntu ntabushobozi afise bw'ukugira ico anyigishije."
       ],
       "answer-type": "multiple-choice"
     },
@@ -55,9 +55,9 @@
     {
       "question": "Ni uwuhe murwi muri iyi mirwi werekanywe muri iyi reresi?",
       "answers": [
-        "Ukwongereza ubumenyi bw’ugusoma",
+        "Ukwongereza ubumenyi bw'ugusoma",
         "Ugutahura ivyisungwa",
-        "Ugutatura impari hamwe n’indwano"
+        "Ugutatura impari hamwe n'indwano"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 3
@@ -67,7 +67,7 @@
       "answers": [
         "Ugukorera mu runani rwiza",
         "Ukwongereza ubumenyi mu biharuro",
-        "Ugushika kw’ishure ku gihe"
+        "Ugushika kw'ishure ku gihe"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 1
