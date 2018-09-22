@@ -34,12 +34,16 @@ fs.readdir(quizFolder, (err, files) => {
 
       while (lines.length > 0) {
         let question = cleanString(lines.shift());
+        let answers = [];
 
-        let answers = [
-          lines.shift(),
-          lines.shift(),
-          lines.shift()
-        ];
+        let line = '';
+        while (answers.length < 3) {
+          while (line.length === 0) {
+            line = lines.shift();
+          }
+          answers.push(line);
+          line = '';
+        }
 
         let correctAnswer = -1;
         answers = answers.map((answer, index) => {
@@ -52,7 +56,7 @@ fs.readdir(quizFolder, (err, files) => {
         });
 
         answers = answers.map(answer => {
-          return cleanString(answer);
+          return cleanString(answer.replace(/^\s*[a-z]\s*\.?\s+/, ''));
         });
 
         lines.shift();
