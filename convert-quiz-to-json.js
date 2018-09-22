@@ -4,6 +4,7 @@ const quizFolder = './quizzes/';
 
 function cleanString (input) {
   return input
+    .replace(/^\s+/, '')
     .replace(/\s\s+/g, ' ')
     .replace(/\s+\?/g, '?')
     .replace(/\?\s+/g, '?')
