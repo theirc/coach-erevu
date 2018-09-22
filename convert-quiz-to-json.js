@@ -3,7 +3,15 @@ const fs = require('fs');
 const quizFolder = './quizzes/';
 
 function cleanString (input) {
-  return input.replace(/\s\s+/g, ' ').replace(/\s+\?/g, '?').replace(/\?\s+/g, '?');
+  return input
+    .replace(/\s\s+/g, ' ')
+    .replace(/\s+\?/g, '?')
+    .replace(/\?\s+/g, '?')
+    .replace(/\s+$/g, '')
+    .replace(/“/g, '"')
+    .replace(/”/g, '"')
+    .replace(/’/g, '\'')
+    ;
 }
 
 let jsonFilesWritten = 0;
@@ -51,6 +59,7 @@ fs.readdir(quizFolder, (err, files) => {
 
         question = question.replace(/\d+\.\s+/, '');
         question = question.replace('(hitamwo inyishu imwe ibereye)', '');
+        question = question.replace('(hitamwo inyishu imwe)', '');
         question = question.replace('(hitamwo kimwe)', '');
         question = question.replace('’', '\'');
         question = question.replace('“', '"');
