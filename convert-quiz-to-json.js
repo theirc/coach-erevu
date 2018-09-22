@@ -3,7 +3,7 @@ const fs = require('fs');
 const quizFolder = './quizzes/';
 
 function cleanString (input) {
-  return input
+  input = input
     .replace(/^\s+/, '')
     .replace(/\s\s+/g, ' ')
     .replace(/\s+\?/g, '?')
@@ -12,7 +12,17 @@ function cleanString (input) {
     .replace(/“/g, '"')
     .replace(/”/g, '"')
     .replace(/’/g, '\'')
+    .replace(/ ,/g, ',')
     ;
+
+
+  let m = input.match(/,[^\s]/);
+  while (m) {
+    input = input.substr(0, m.index + 1) + ' ' + input.substr(m.index + 1);
+    m = input.match(/,[^\s]/)
+  }
+
+  return input;
 }
 
 let jsonFilesWritten = 0;

@@ -714,9 +714,9 @@
             {
               "question": "Ni iyihe ntumbero y'agakorwa?",
               "answers": [
-                "Gufasha abanyeshure kuvuga ,kwibuka no kwerekana ibishobisho bitandukanye",
+                "Gufasha abanyeshure kuvuga, kwibuka no kwerekana ibishobisho bitandukanye",
                 "Gufasha abanyeshure kumenya ko abagenzi babo bafitaniye ivyo bahuriyeko n'ubudasa",
-                "Gufasha abanyeshure kwigabura mu mugwi , kwumvirizanya no gusangira ivyiyumviro n'abandi"
+                "Gufasha abanyeshure kwigabura mu mugwi, kwumvirizanya no gusangira ivyiyumviro n'abandi"
               ],
               "answer-type": "multiple-choice",
               "correct-answer": 3
@@ -811,9 +811,9 @@
             {
               "question": "Ni iyihe ntumbero y'agakorwa?",
               "answers": [
-                "Gufasha abanyeshure kuvuga ,kwibuka no kwerekana ibishobisho bitandukanye",
+                "Gufasha abanyeshure kuvuga, kwibuka no kwerekana ibishobisho bitandukanye",
                 "Gufasha abanyeshure kwibuka amategeko agoye no kubafasha kwiyumvira imbere yogukora",
-                "Gufasha abanyeshure kwiga gukorera mu runani ,naho hoba hariho ibibatandukanya"
+                "Gufasha abanyeshure kwiga gukorera mu runani, naho hoba hariho ibibatandukanya"
               ],
               "answer-type": "multiple-choice",
               "correct-answer": 3
@@ -1012,7 +1012,7 @@
               "question": "Ni iyihe ntumbero y'agakorwa?",
               "answers": [
                 "Gufasha abanyeshure kwitaho ugukurikira no gufata ku mutwe inkuru",
-                "Gufasha abanyeshure kuvuga ,kwibuka no kwerekana ibishobisho bitandukanye",
+                "Gufasha abanyeshure kuvuga, kwibuka no kwerekana ibishobisho bitandukanye",
                 "Gufasha abanyeshure kumenya ibitera amatati biciye mu kubaza ibibazo"
               ],
               "answer-type": "multiple-choice",

@@ -26,9 +26,9 @@
     {
       "question": "Ni iyihe ntumbero y'agakorwa?",
       "answers": [
-        "Gufasha abanyeshure kuvuga ,kwibuka no kwerekana ibishobisho bitandukanye",
+        "Gufasha abanyeshure kuvuga, kwibuka no kwerekana ibishobisho bitandukanye",
         "Gufasha abanyeshure kumenya ko abagenzi babo bafitaniye ivyo bahuriyeko n'ubudasa",
-        "Gufasha abanyeshure kwigabura mu mugwi , kwumvirizanya no gusangira ivyiyumviro n'abandi"
+        "Gufasha abanyeshure kwigabura mu mugwi, kwumvirizanya no gusangira ivyiyumviro n'abandi"
       ],
       "answer-type": "multiple-choice",
       "correct-answer": 3
