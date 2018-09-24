@@ -22,7 +22,7 @@
     </activity>
     <activity android:name=".activity.ActionActivity"/>
     <activity android:name=".activity.VideoActivity"/>
-    <activity android:name=".activity.QuizActivity"/>
+    <activity android:name=".activity.QuizActivity" android:configChanges="orientation|screenSize"/>
     <activity android:name=".activity.TopicActivity"/>
   </application>
 
