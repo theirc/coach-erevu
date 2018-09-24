@@ -51,10 +51,10 @@ public class QuizActivity extends AppCompatActivity {
                       .getDrawable(getResources(), R.drawable.header_bar, null)), topic.getColor()));
     }
 
-    inflateQuestion(currentIndex, false);
+    inflateQuestion(currentIndex);
   }
 
-  private void inflateQuestion(int questionIndex, boolean replace) {
+  private void inflateQuestion(int questionIndex) {
     this.question = topic.getQuestions().get(questionIndex);
     this.currentIndex = questionIndex;
 
@@ -77,26 +77,19 @@ public class QuizActivity extends AppCompatActivity {
         MultipleChoiceFragment multipleChoiceFragment = new MultipleChoiceFragment();
         multipleChoiceFragment.setArguments(args);
 
-        if (replace) {
-          transaction.replace(R.id.question_fragment_container, multipleChoiceFragment);
-          transaction.addToBackStack(null);
-        } else {
-          transaction.add(R.id.question_fragment_container, multipleChoiceFragment);
-        }
-
+        // Note: This makes sure we only have one fragment ever visible, even if the activity
+        // gets re-created, for example; when you rotate your screen.
+        transaction.replace(R.id.question_fragment_container, multipleChoiceFragment);
+        transaction.disallowAddToBackStack();
         transaction.commit();
-
       } else if (question.getAnswerType().equals("free-text")) {
         FreeTextFragment freeTextFragment = new FreeTextFragment();
         freeTextFragment.setArguments(args);
 
-        if (replace) {
-          transaction.replace(R.id.question_fragment_container, freeTextFragment);
-          transaction.addToBackStack(null);
-        } else {
-          transaction.add(R.id.question_fragment_container, freeTextFragment);
-        }
-
+        // Note: This makes sure we only have one fragment ever visible, even if the activity
+        // gets re-created, for example; when you rotate your screen.
+        transaction.replace(R.id.question_fragment_container, freeTextFragment);
+        transaction.disallowAddToBackStack();
         transaction.commit();
       }
     }
@@ -107,7 +100,7 @@ public class QuizActivity extends AppCompatActivity {
   public void advanceToNextQuestion() {
     if (currentIndex + 1 < topic.getQuestions().size()) {
       // Inflate the next question, and replace the existing fragment.
-      inflateQuestion(++currentIndex, true);
+      inflateQuestion(++currentIndex);
     } else {
       // Build the dialog to inform the user they've finished the quiz, and present it to them.
       AlertDialog alertDialog = new AlertDialog.Builder(this).create();
