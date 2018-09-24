@@ -8,12 +8,12 @@
   "categories": [
     {
       "title": "Introduction",
-      "color": "#59A4CB",
+      "color": "#45b39d",
       "topics": [
         {
           "id": 0,
           "title": "INTRODUCTION",
-          "color": "#59A4CB",
+          "color": "#45b39d",
           "video": "introduction.mp4",
           "questions": [
             {
@@ -90,12 +90,12 @@
     },
     {
       "title": "Level 1",
-      "color": "#45B39D",
+      "color": "#3ca095",
       "topics": [
         {
           "id": 0,
           "title": "SIMONI AVUZE",
-          "color": "#45B39D",
+          "color": "#3ca095",
           "video": "samuel says-hevc.mp4",
           "questions": [
             {
@@ -192,7 +192,7 @@
         {
           "id": 1,
           "title": "UMUTWE IBITUGU AMAVI AMANO",
-          "color": "#45B39D",
+          "color": "#3ca095",
           "video": "[03] Head Shoulders Knees Toes.mp4",
           "questions": [
             {
@@ -289,7 +289,7 @@
         {
           "id": 2,
           "title": "URUKURIKIRANE",
-          "color": "#45B39D",
+          "color": "#3ca095",
           "video": "[05] Sequence.mp4",
           "questions": [
             {
@@ -387,12 +387,12 @@
     },
     {
       "title": "Level 2",
-      "color": "#117A65",
+      "color": "#348c8d",
       "topics": [
         {
           "id": 0,
           "title": "TOMBOZA IBISHOBISHO VYANJE",
-          "color": "#117A65",
+          "color": "#348c8d",
           "video": "[04] Guess My Emotions.mp4",
           "questions": [
             {
@@ -489,7 +489,7 @@
         {
           "id": 1,
           "title": "WOKWIYUMVA GUTE?",
-          "color": "#117A65",
+          "color": "#348c8d",
           "video": "[01] How Would You Feel.mp4",
           "questions": [
             {
@@ -586,7 +586,7 @@
         {
           "id": 2,
           "title": "DADAZA WONGERE WOROSHE",
-          "color": "#117A65",
+          "color": "#348c8d",
           "video": "[07] Tense and Release.mp4",
           "questions": [
             {
@@ -684,12 +684,12 @@
     },
     {
       "title": "Level 3",
-      "color": "#1A5276",
+      "color": "#2b7986",
       "topics": [
         {
           "id": 0,
           "title": "KORA IMASHINE",
-          "color": "#1A5276",
+          "color": "#2b7986",
           "video": "[09] Make a Machine.mp4",
           "questions": [
             {
@@ -786,7 +786,7 @@
         {
           "id": 1,
           "title": "UMUYAGA URAHUHUTA",
-          "color": "#1A5276",
+          "color": "#2b7986",
           "video": "[08] The Wind Blows.mp4",
           "questions": [
             {
@@ -883,7 +883,7 @@
         {
           "id": 2,
           "title": "TWENGESHA IGISHUSHO",
-          "color": "#1A5276",
+          "color": "#2b7986",
           "video": "[02] Make the Statue Laugh.mp4",
           "questions": [
             {
@@ -981,12 +981,12 @@
     },
     {
       "title": "Level 4",
-      "color": "#1A5276",
+      "color": "#23657e",
       "topics": [
         {
           "id": 0,
           "title": "IBIBAZO BITANU",
-          "color": "#1A5276",
+          "color": "#23657e",
           "video": "[10] Five questions.mp4",
           "questions": [
             {
@@ -1083,7 +1083,7 @@
         {
           "id": 1,
           "title": "AMATATI ARIGISHA",
-          "color": "#1A5276",
+          "color": "#23657e",
           "video": "",
           "questions": [
             {
@@ -1181,12 +1181,12 @@
     },
     {
       "title": "Level 5",
-      "color": "#1A5276",
+      "color": "#1a5276",
       "topics": [
         {
           "id": 0,
           "title": "BA UMUNYATUGENEGENE",
-          "color": "#1A5276",
+          "color": "#1a5276",
           "video": "",
           "questions": [
             {
@@ -1283,7 +1283,7 @@
         {
           "id": 1,
           "title": "GUMA KW’IHANGIRO",
-          "color": "#1A5276",
+          "color": "#1a5276",
           "video": "PURSUE A GOAL VIDEO IS MISSING.mp4",
           "questions": [
             {
