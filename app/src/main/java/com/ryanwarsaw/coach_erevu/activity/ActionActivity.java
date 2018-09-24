@@ -59,7 +59,7 @@ public class ActionActivity extends AppCompatActivity {
     videoButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View view) {
         final Intent intent = new Intent(ActionActivity.this, VideoActivity.class);
-        intent.putExtra("video_name", topic.getVideoName());
+        intent.putExtra("topic", gson.toJson(topic));
         intent.putExtra("preferences", gson.toJson(preferences));
 
         MainActivity.getLoggingHandler().write(ActionActivity.this.getClass().getSimpleName(),
