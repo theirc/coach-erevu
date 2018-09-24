@@ -21,10 +21,12 @@ import com.google.android.exoplayer2.upstream.DataSource.Factory;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.FileDataSource;
 import com.google.android.exoplayer2.upstream.FileDataSource.FileDataSourceException;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.ryanwarsaw.coach_erevu.MainActivity;
 import com.ryanwarsaw.coach_erevu.R;
 import com.ryanwarsaw.coach_erevu.model.Preferences;
+import com.ryanwarsaw.coach_erevu.model.Topic;
 
 import java.io.File;
 
@@ -37,8 +39,11 @@ public class VideoActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_video);
 
-    final Preferences preferences = new GsonBuilder().create()
-            .fromJson(getIntent().getStringExtra("preferences"), Preferences.class);
+    final Gson gson = new GsonBuilder().create();
+
+    final Preferences preferences = gson.fromJson(
+            getIntent().getStringExtra("preferences"), Preferences.class);
+    final Topic topic = gson.fromJson(getIntent().getStringExtra("topic"), Topic.class);
 
     exoPlayer = ExoPlayerFactory.newSimpleInstance(this, new DefaultTrackSelector());
 
@@ -58,7 +63,7 @@ public class VideoActivity extends AppCompatActivity {
       }
     });
 
-    exoPlayer.prepare(buildVideoSource(getIntent().getStringExtra("video_name")));
+    exoPlayer.prepare(buildVideoSource(topic.getVideoName()));
     exoPlayer.setPlayWhenReady(true);
   }
 
