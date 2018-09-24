@@ -8,7 +8,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -101,8 +100,7 @@ public class QuizActivity extends AppCompatActivity {
   public void advanceToNextQuestion() {
     if (currentIndex + 1 < topic.getQuestions().size()) {
       // Inflate the next question, and replace the existing fragment.
-      currentIndex += 1;
-      inflateQuestion(currentIndex);
+      inflateQuestion(++currentIndex);
     } else {
       // Build the dialog to inform the user they've finished the quiz, and present it to them.
       AlertDialog alertDialog = new AlertDialog.Builder(this).create();

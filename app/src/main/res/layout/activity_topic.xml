@@ -25,7 +25,7 @@
     android:layout_width="0dp"
     android:layout_height="0dp"
     android:divider="@null"
-    android:dividerHeight="40dp"
+    android:dividerHeight="20dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="@id/guideline_right"
     app:layout_constraintStart_toStartOf="@id/guideline_left"
