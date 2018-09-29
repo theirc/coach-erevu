@@ -85,6 +85,12 @@
               "correct-answer": 1
             }
           ]
+        },
+        {
+          "id": 1,
+          "title": "Establish Classroom Routines",
+          "color": "#45b39d",
+          "video": "HEALING CLASSROOMS (2.1) -ESTABLISHING ROUTINES KIRUNDI FINAL.mp4"
         }
       ]
     },
@@ -488,6 +494,12 @@
         },
         {
           "id": 1,
+          "title": "Express Appreciation",
+          "color": "#348c8d",
+          "video": "HEALING CLASSROOMS (4.1 ) - GIVING PRAISE KIRUNDI FINAL.mp4"
+        },
+        {
+          "id": 2,
           "title": "WOKWIYUMVA GUTE?",
           "color": "#348c8d",
           "video": "[01] How Would You Feel.mp4",
@@ -584,7 +596,7 @@
           ]
         },
         {
-          "id": 2,
+          "id": 3,
           "title": "DADAZA WONGERE WOROSHE",
           "color": "#348c8d",
           "video": "[07] Tense and Release.mp4",
@@ -882,6 +894,12 @@
         },
         {
           "id": 2,
+          "title": "Effective Group Work",
+          "color": "#348c8d",
+          "video": "HEALING CLASSROOMS (5.1) - EFFECTIVE GROUP WORK KIRUNDI FINAL.mp4"
+        },
+        {
+          "id": 3,
           "title": "TWENGESHA IGISHUSHO",
           "color": "#2b7986",
           "video": "[02] Make the Statue Laugh.mp4",
@@ -1282,6 +1300,12 @@
         },
         {
           "id": 1,
+          "title": "Effective Questioning",
+          "color": "#348c8d",
+          "video": "HEALING CLASSROOMS (6.2) - QUESTIONING TECHNIQUES KIRUNDI FINAL.mp4"
+        },
+        {
+          "id": 2,
           "title": "GUMA KW'IHANGIRO",
           "color": "#1a5276",
           "video": "pursue a goal.mp4-hevc.mp4",
