@@ -1282,97 +1282,97 @@
         },
         {
           "id": 1,
-          "title": "GUMA KW’IHANGIRO",
+          "title": "GUMA KW'IHANGIRO",
           "color": "#1a5276",
           "video": "PURSUE A GOAL VIDEO IS MISSING.mp4",
           "questions": [
             {
               "question": "Wabonye gute muri rusangi iyi reresi?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Nayikunze kandi yari ngira kamaro",
                 "Ntaho mpagaze kandi nibaza ko vyoba vyari ngira kamaro canke atari ngira kamaro",
                 "Sinahimbawe n'iyi reresi kandi nibaza ko itari ngira kamaro"
-              ]
+              ],
+              "answer-type": "multiple-choice"
             },
             {
               "question": "Ni ubuhe bushobozi buri muri ino reresi?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Gukorera mu runani rwiza",
                 "Kutadohoka",
                 "kwubaka ubwonko bwawe"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             },
             {
               "question": "Ni iyihe ntumbero y'agakorwa?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Gufasha abanyeshure kwiga ukugene bakorera mu runani",
                 "Gufasha abanyeshure ukwitaho",
-                "Gufasha abanyeshure gutegura amahangiro n’integuro zishikwako"
+                "Gufasha abanyeshure gutegura amahangiro n'integuro zishikwako"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 3
             },
             {
-              "question": "Iyo abanyeshure badashobora gutegura ihangiro ,woshobora kubafasha gute?",
-              "answer-type": "multiple-choice",
+              "question": "Iyo abanyeshure badashobora gutegura ihangiro, woshobora kubafasha gute?",
               "answers": [
-                "Kubabwira bacape ifoto y’umuryango wabo",
-                "Gusangira n’abanyeshure bawe uturorero twawe nyezina mu kubatera intege",
+                "kubabwira bacape ifoto y'umuryango wabo",
+                "Gusangira n'abanyeshure bawe uturorero twawe nyezina mu kubatera intege",
                 "Kubwira abanyeshure kutabibamwo"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             },
             {
               "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
-              "answer-type": "multiple-choice",
               "answers": [
-                "Sinosubira guhitamwo abanyeshure barenga babiri mu gusabikanya amahangiro n’intambuko zabo",
+                "Sinosubira guhitamwo abanyeshure barenga babiri mu gusabikanya amahangiro n'intambuko zabo",
                 "Notegerezwa kuvuga gusa ku mahangiro yanje",
                 "Notegerezwa kubwira abanyeshure ko amahangiro yabo ari mabi"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 1
             },
             {
               "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Notegerezwa gusaba abanyeshure kwerekana amahangiro yabo",
-                "Notegerezwa gutanga uturorero tw’ibishobisho",
+                "Notegerezwa gutanga uturorero tw'ibishobisho",
                 "Notegerezwa kwumviriza neza abanyeshure no kubabwira uko vyagenze"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 3
             },
             {
               "question": "Ni ikihe kintu utotegerezwa kuba uriko urakora?",
-              "answer-type": "multiple-choice",
               "answers": [
                 "Sinotegerezwa gutera intege abanyeshure",
                 "Sinotegerezwa kubwira abanyeshure uko amahingiro yoshobora kuba ameze",
-                "Sinotegerezwa gusobanura ico arico ihangiro nyezina,rigezweho kandi rishikwako"
+                "Sinotegerezwa gusobanura ico arico ihangiro nyezina, rigezweho kandi rishikwako"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             },
             {
-              "question": "Ni ibiki umunyeshure yoshobora kuvuga mu mwanya wo kurongora ikiganiro c’aka gakorwa?",
-              "answer-type": "multiple-choice",
+              "question": "Ni ibiki umunyeshure yoshobora kuvuga mu mwanya wo kurongora ikiganiro c'aka gakorwa?",
               "answers": [
                 "Aka gakorwa karamfashije kwitaho gukurikira",
                 "Twotegerezwa ibihe vyose kubaza ibibazo bitanu mu gihe turi mu matati",
-                "Igihe cose nkeneye gukora ikintu ,ubu rero noshobora gushiraho integuro n’intambuko nshobora gukoresha bukebuke kugira nshike kw’ihangiro ryanje"
+                "Igihe cose nkeneye gukora ikintu, ubu rero noshobora gushiraho integuro n'intambuko nshobora gukoresha bukebuke kugira nshike kw'ihangiro ryanje"
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 3
             },
             {
-              "question": "Iyo ushoboye kwimenyereza aka gakorwa imisi myinshi ikurikirana ,wokora iki?",
-              "answer-type": "multiple-choice",
+              "question": "Iyo ushoboye kwimenyereza aka gakorwa imisi myinshi ikurikirana, wokora iki?",
               "answers": [
                 "Gusaba abanyeshure basangiye amahangiro yabo ubuheruka kutabamwo",
-                "Guhindura ubwoko bw’amhangiro ibihe vyose wimenyereje .shiraho amahangiro y’ishure umusi umwe n’amahangiro yo gukorana n’umuryango ubukurikira hanyuma amahangiro y’ibikorwa vy’inyuma y’ishure uwundi musi inyuma y’ivyo.",
+                "Guhindura ubwoko bw'amhangiro ibihe vyose wimenyereje .shiraho amahangiro y'ishure umusi umwe n'amahangiro yo gukorana n'umuryango ubukurikira hanyuma amahangiro y'ibikorwa vy'inyuma y'ishure uwundi musi inyuma y'ivyo.",
                 "Hitamwo barya banyeshure nyene mu gusabikanya amahangiro yabo buri musi."
               ],
+              "answer-type": "multiple-choice",
               "correct-answer": 2
             }
           ]
