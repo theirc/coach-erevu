@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+// Process key store properties from keystore.properties file.
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
   compileSdkVersion 28
 
@@ -7,26 +12,27 @@ android {
     applicationId "com.ryanwarsaw.coach_erevu"
     minSdkVersion 19
     targetSdkVersion 28
-    versionCode 3
-    versionName "3.0"
+    versionCode 5
+    versionName "3.1"
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+
+  signingConfigs {
+    publish {
+      keyAlias keystoreProperties['keyAlias']
+      keyPassword keystoreProperties['keyPassword']
+      storeFile file(keystoreProperties['storeFile'])
+      storePassword keystoreProperties['storePassword']
+    }
   }
 
   buildTypes {
     latest {
-      debuggable true
-      minifyEnabled true
-      shrinkResources true
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-      signingConfig signingConfigs.debug
+      signingConfig signingConfigs.publish
     }
 
     bundle {
-      debuggable true
-      minifyEnabled true
-      shrinkResources true
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-      signingConfig signingConfigs.debug
+      signingConfig signingConfigs.publish
     }
   }
 
@@ -47,6 +53,11 @@ android {
         delete(fileTree(dir: variant.mergeAssets.outputDir, includes: ['**/*.mp4']))
       }
     }
+  }
+
+  lintOptions {
+    disable 'GoogleAppIndexingWarning'
+    baseline file("lint-baseline.xml")
   }
 }
 

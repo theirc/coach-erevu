@@ -10,3 +10,4 @@
 /captures
 .externalNativeBuild
 app/src/main/assets/
+keystore.properties
