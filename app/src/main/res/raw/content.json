@@ -368,7 +368,7 @@
               "correct-answer": 1
             },
             {
-              "question": "Ni akahe karore k'ikibazo wobaza abanyeshure bawe mu mwanya w'ikiganiro c'aka gakorwa hitamwo?",
+              "question": "Ni akahe karore k'ikibazo wobaza abanyeshure bawe mu mwanya w'ikiganiro c'aka gakorwa?",
               "answer-type": "multiple-choice",
               "answers": [
                 "Ni gute woshobora gukorera mu runani hamwe n'abandi mu buzima bwa misi yose?",
@@ -774,7 +774,7 @@
               "correct-answer": 3
             },
             {
-              "question": ". Ni akahe karore k'ikibazo wotegerezwa kubaza abanyeshure mu kiganiro c'aka gakorwa?(hitamwo inyishu imwe ibereye",
+              "question": "Ni akahe karore k'ikibazo wotegerezwa kubaza abanyeshure mu kiganiro c'aka gakorwa?",
               "answers": [
                 "Ni gute amatati yoshobora gukingwa?",
                 "Ni gute mwahisemwo uruhara rw'umwe umwe muri mwebwe rw'ico ategerezwa gukina ku mashine?",
