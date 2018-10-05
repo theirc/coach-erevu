@@ -15,6 +15,7 @@
           "title": "Intangamarara",
           "color": "#45b39d",
           "video": "introduction.mp4",
+          "end-of-quiz": "Mwakoze gukorera hamwe aka kabazo nk’umurwi!",
           "questions": [
             {
               "question": "Ni ikihe ciyumviro rusangi cawe kijanye n'ugukunda iyi reresi?",

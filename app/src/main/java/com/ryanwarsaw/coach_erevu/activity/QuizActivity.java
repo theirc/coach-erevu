@@ -105,7 +105,11 @@ public class QuizActivity extends AppCompatActivity {
       // Build the dialog to inform the user they've finished the quiz, and present it to them.
       AlertDialog alertDialog = new AlertDialog.Builder(this).create();
       alertDialog.setTitle(getResources().getString(R.string.quiz_end_title));
-      alertDialog.setMessage(getResources().getString(R.string.quiz_end));
+
+      // If topic has "end-of-quiz" property set use that, otherwise pull default from string resource.
+      alertDialog.setMessage(topic.getEndOfQuiz() != null ?
+              topic.getEndOfQuiz() : getResources().getString(R.string.quiz_end));
+
       alertDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
         public void onDismiss(DialogInterface dialog) {
           finish();

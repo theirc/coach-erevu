@@ -24,6 +24,9 @@ public class Topic {
   @SerializedName("video")
   private String videoName;
 
+  @SerializedName("end-of-quiz")
+  private String endOfQuiz;
+
   @SerializedName("questions")
   private List<Question> questions;
 }
