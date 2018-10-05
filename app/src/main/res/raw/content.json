@@ -30,7 +30,7 @@
               "answers": [
                 "Uyu muntu araciye ubwenge cane kandi yatumye ndabikunda",
                 "Sindabizi neza",
-                "Uyu muntu ntabushobozi afise bw'ukugira ico anyigishije."
+                "Uyu muntu ntabushobozi afise bw'ukugira ico anyigishije"
               ],
               "answer-type": "multiple-choice"
             },
@@ -126,7 +126,7 @@
             {
               "question": "Ni iyihe ntumbero y'agakorwa?",
               "answers": [
-                "Gufasha abanyeshure kwumviriza no kugenzura ibikorwa vyabo.",
+                "Gufasha abanyeshure kwumviriza no kugenzura ibikorwa vyabo",
                 "Gufasha abanyeshure kwiga ingendo nshasha",
                 "Gufasha abanyeshure gukorera mu runani"
               ],
@@ -187,7 +187,7 @@
               "question": "Ni gute wogira aka gakorwa akagumye ku banyeshure bakuze?",
               "answers": [
                 "Vuga amategeko witonze",
-                "Vuga amategeko mu gihe gusa abanyeshure bicaye.",
+                "Vuga amategeko mu gihe gusa abanyeshure bicaye",
                 "Vuga amategeko arimwo ibikorwa bibiri"
               ],
               "answer-type": "multiple-choice",
@@ -245,7 +245,7 @@
               "answer-type": "multiple-choice",
               "answers": [
                 "Notegertezwa misi yose gutanga ivyisungwa mu rutonde rutandukanye mu kuvangamwo amategeko nka: \"kora ku mutwe\", \"kora ku bitugu\", \"kora ku mavi\" canke \"kora ku mano\"",
-                "Notegerezwa gutangura kino gikorwa mu gutanga ivyisungwa mu rutonde rumwe: kora ku mutwe, ibitugu, amavi, hanyuma amano.",
+                "Notegerezwa gutangura kino gikorwa mu gutanga ivyisungwa mu rutonde rumwe: kora ku mutwe, ibitugu, amavi, hanyuma amano",
                 "Nokwizigira ko abanyeshure bobikora neza mu kwimenyereza ubwa mbere"
               ],
               "correct-answer": 2
@@ -256,7 +256,7 @@
               "answers": [
                 "Notegerezwa kudomako urutoke ku banyeshure mu gihe bariko baritwara uko bitabereye no gukoresha inzira zo kubatera intege",
                 "Notegerazwa kugumiza ibihimba vy'umubiri ku rutonde rumwe ibihe vyose",
-                "Notegerezwa guhagarika kwimenyereza hamwe n'abanyeshure mugihe badakoze neza umwimenyerezo wa mbere."
+                "Notegerezwa guhagarika kwimenyereza hamwe n'abanyeshure mugihe badakoze neza umwimenyerezo wa mbere"
               ],
               "correct-answer": 1
             },
@@ -264,7 +264,7 @@
               "question": "Ni ikihe kintu wotegerezwa kutaba uriko urakora?",
               "answer-type": "multiple-choice",
               "answers": [
-                "Sinotegerezwa gutera intege abanyeshure ngo bongere bagerageze kandi naho boba bakoze ikosa.",
+                "Sinotegerezwa gutera intege abanyeshure ngo bongere bagerageze kandi naho boba bakoze ikosa",
                 "Sinotegerezwa gukabukanya amazina y'ibihimba vy'umubiri",
                 "Sinotegerezwa kugira agakorwa akagoye mu kunyarutsa canke mu kwongerako amategeko mu gihe abana biriko birabagumira"
               ],
@@ -321,9 +321,9 @@
               "question": "Ni iyihe ntumbero y'agakorwa?",
               "answer-type": "multiple-choice",
               "answers": [
-                "Gufasha abanyeshure kumenya intambuko bategerezwa gufata kugira bashike ku mahangiro yabo.",
-                "Gufasha abanyeshure gushira ku muzirikanyi no kwibuka ivyo bize.",
-                "Gufasha abanyeshure kwiga gukorera mu mugwi no guhanahana ivyiyumviro umwe n'uwundi."
+                "Gufasha abanyeshure kumenya intambuko bategerezwa gufata kugira bashike ku mahangiro yabo",
+                "Gufasha abanyeshure gushira ku muzirikanyi no kwibuka ivyo bize",
+                "Gufasha abanyeshure kwiga gukorera mu mugwi no guhanahana ivyiyumviro umwe n'uwundi"
               ],
               "correct-answer": 2
             },
@@ -331,7 +331,7 @@
               "question": "Ni ibihe imigwi y'abanyeshure itegerezwa gufata nka nkama muri kano gakorwa?",
               "answer-type": "multiple-choice",
               "answers": [
-                "Urutonde rw'ibishobisho vyanditswe ku rubaho.",
+                "Urutonde rw'ibishobisho vyanditswe ku rubaho",
                 "Ibibazo vyo kubazanya mu gihe hari ikiganiro",
                 "Urukurikirane rw'ibikorwa vyakozwe n'umwigisha"
               ],
@@ -341,7 +341,7 @@
               "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
               "answer-type": "multiple-choice",
               "answers": [
-                "Notegerezwa guhindura umurwi watanguye ubwa mbere ku muzunguruko uwo ariwo wose kugira ngo imigwi yose igire amahirwe yo kuba iya mbere, iya kari iya gatatu canke ubwa nyuma.",
+                "Notegerezwa guhindura umurwi watanguye ubwa mbere ku muzunguruko uwo ariwo wose kugira ngo imigwi yose igire amahirwe yo kuba iya mbere, iya kari iya gatatu canke ubwa nyuma",
                 "Notegerezwa kubwira abanyeshure urutonde mu gihe batavyibuka bonyene ubwabo",
                 "Notegerezwa kuraba ko abanyeshure bose bimenyereje ku mwanya umwe"
               ],
@@ -436,7 +436,7 @@
               "answers": [
                 "Umurwi w'abanyeshure uhabwa amahirwe incuro zitatu mu gutomboza igishogisho nyakuri",
                 "Umurwi w'abanyeshure utegerezwa gutomboza igishogisho nyakuri ku ncuro ya mbere",
-                "Umurwi w'abanyeshure ufise amahirwe adaharurika mu gutomboza igishogisho nyakuri."
+                "Umurwi w'abanyeshure ufise amahirwe adaharurika mu gutomboza igishogisho nyakuri"
               ],
               "correct-answer": 1
             },
@@ -758,7 +758,7 @@
               "answers": [
                 "Notegerezwa guha amahirwe imigwi yabikoze neza",
                 "Notegerezwa gutanga uburorero mu gihe abanyeshure badashoboye kwiyumvira ku mashine canke badashoboye kwiyumvira ukwikora",
-                "Notegerezwa kubwira abanyeshure ibikora imashine ."
+                "Notegerezwa kubwira abanyeshure ibikora imashine"
               ],
               "answer-type": "multiple-choice",
               "correct-answer": 2
@@ -865,7 +865,7 @@
               "answers": [
                 "Sinotegerezwa gutera intege abanyeshure mu gutahura ubudasa",
                 "Sinotegerezwa kwemere abanyeshure gushima uwundi munyeshure bitewe n'ivyo bakunda n'ivyo badakunda",
-                "Sinotegerezwa gusobanura kwari vyiza kugira ivyo bahuriyeko n'ibibatandukanya."
+                "Sinotegerezwa gusobanura kwari vyiza kugira ivyo bahuriyeko n'ibibatandukanya"
               ],
               "answer-type": "multiple-choice",
               "correct-answer": 2
@@ -1091,7 +1091,7 @@
               "answers": [
                 "Guhagarika kwimenyereza aka gakorwa nkaca ntangura ikindi cigwa",
                 "Gusaba abanyeshure kwongeramwo ibibazo bijanye na kimwe kimwe muri bimwe bitanu nka \"ico caguteye kwiyumva gute?\"",
-                "kubwira abanyeshure ko badashoboye muri kano gakorwa."
+                "kubwira abanyeshure ko badashoboye muri kano gakorwa"
               ],
               "answer-type": "multiple-choice",
               "correct-answer": 2
@@ -1147,7 +1147,7 @@
               "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
               "answers": [
                 "Notegerezwa gutondeka amatati ku kibaho mu gihe isomero ririko rirayatanga",
-                "Notegerezwa kwandika umuti w'ayo matati yatanzwe n'abanyeshure ku kibaho ntakoresheje ijambo ku rindi.",
+                "Notegerezwa kwandika umuti w'ayo matati yatanzwe n'abanyeshure ku kibaho ntakoresheje ijambo ku rindi",
                 "Notegerezwa kubwira abanyeshure banje ko amatati biyumviriyeko ko ari akarorero kabi hanyuma nkabasaba kwicara"
               ],
               "answer-type": "multiple-choice",
@@ -1393,8 +1393,8 @@
               "question": "Iyo ushoboye kwimenyereza aka gakorwa imisi myinshi ikurikirana, wokora iki?",
               "answers": [
                 "Gusaba abanyeshure basangiye amahangiro yabo ubuheruka kutabamwo",
-                "Guhindura ubwoko bw'amhangiro ibihe vyose wimenyereje .shiraho amahangiro y'ishure umusi umwe n'amahangiro yo gukorana n'umuryango ubukurikira hanyuma amahangiro y'ibikorwa vy'inyuma y'ishure uwundi musi inyuma y'ivyo.",
-                "Hitamwo barya banyeshure nyene mu gusabikanya amahangiro yabo buri musi."
+                "Guhindura ubwoko bw'amhangiro ibihe vyose wimenyereje .shiraho amahangiro y'ishure umusi umwe n'amahangiro yo gukorana n'umuryango ubukurikira hanyuma amahangiro y'ibikorwa vy'inyuma y'ishure uwundi musi inyuma y'ivyo",
+                "Hitamwo barya banyeshure nyene mu gusabikanya amahangiro yabo buri musi"
               ],
               "answer-type": "multiple-choice",
               "correct-answer": 2
