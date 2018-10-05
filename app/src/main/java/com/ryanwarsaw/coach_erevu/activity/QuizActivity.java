@@ -97,7 +97,6 @@ public class QuizActivity extends AppCompatActivity {
     MainActivity.getLoggingHandler().write(getClass().getSimpleName(), "QUIZ_QUESTION", question.getQuestion());
   }
 
-  // TODO: Review the text here.
   public void advanceToNextQuestion() {
     if (currentIndex + 1 < topic.getQuestions().size()) {
       // Inflate the next question, and replace the existing fragment.
