@@ -954,7 +954,7 @@
               "correct-answer": 2
             },
             {
-              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?(",
+              "question": "Ni ikihe kintu wotegerezwa kuba uriko urakora?",
               "answers": [
                 "Notegerezwa kureka abanyeshure bagakoranako mu gutwengeshanya",
                 "Notegerezwa kureka abanyeshure gukora ivyo biyumvamwo gukora vyose",
@@ -964,7 +964,7 @@
               "correct-answer": 2
             },
             {
-              "question": "Ni ikihe kintu utotegerezwa gurakora?(",
+              "question": "Ni ikihe kintu utotegerezwa gurakora?",
               "answers": [
                 "Sinotegerezwa kureka abanyeshure bakoraneko mu kwimenyereza kano gakorwa",
                 "Sinotegerezwa gushira abanyeshure mu mirwi ya babiri-babiri",
